@@ -82,3 +82,73 @@ body {
     align-items: center;
     padding: 3px;
 }
+
+.section-generos {
+    padding-top: 30px;
+    padding-bottom: 100px;
+}
+
+.titulo-generos {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding-bottom: 30px;
+    
+}
+
+.caja-generos {
+    display: flex;
+    justify-content: space-around; 
+    align-items: center;
+}
+
+.genero {
+    border: black 1px solid;
+}
+
+.genero a img {
+    width: 300px;
+}
+
+.flecha {
+    
+    width: 50px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+
+}
+
+.flecha img {
+    width: 30px;
+}
+
+.footer div {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 20px;
+}
+
+.footer div ul {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+    align-items: center;
+}
+
+
+.footer ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+.logochico {
+    width: 150px;
+}
+
+.divs-footer {
+    display: flex;
+    align-items: center;
+    padding-right: 20px;
+}
