@@ -5,6 +5,7 @@ body {
 .enreeltitulo {
     font-family: sans-serif;
    font-size: 50px;
+   padding-left: 50px;
 }
 
 .textosheader {
@@ -40,6 +41,7 @@ body {
     display: flex;
     list-style: none;
     gap: 30px;
+    padding-left: 350px;
 }
 
 .header2 ul li a {

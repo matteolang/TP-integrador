@@ -84,19 +84,22 @@ body {
     padding: 3px;
 }
 
+
 .titulos-colecciones {
 display: flex;
 justify-content: space-around;
 font-family: Verdana, Geneva, Tahoma, sans-serif;
+padding-top: 50px;
 }
 
 .container1 {
    display: flex;
    justify-content: space-around;
-   border: 1px solid black;
+   
    padding-top: 20px ;
     padding-bottom: 20px;
     align-items: center;
+    padding-bottom: 30px;
 }
 
 .caja {
@@ -110,6 +113,7 @@ font-family: Verdana, Geneva, Tahoma, sans-serif;
     width: 50px;
     background-color: transparent;
     border: none;
+    cursor: pointer;
 
 }
 
@@ -125,4 +129,35 @@ font-family: Verdana, Geneva, Tahoma, sans-serif;
 
 .pelicula-serie img {
     width: 200px;
+}
+
+
+
+
+.footer div {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 20px;
+}
+
+.footer div ul {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+    align-items: center;
+}
+
+
+.footer ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+.logochico {
+    width: 150px;
+}
+
+.divs-footer {
+    display: flex;
+    align-items: center;
 }
