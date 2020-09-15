@@ -85,26 +85,37 @@ body {
 }
 
 
-
-
-
-
 .section-body{
     display: flex;
     justify-content: space-between;
-
+    padding: 20px;
 }
-
-
 .foto-detalle a img{
-    width: 50%;
+    width: 100%;
     border: 1px solid black;
 }
-
-
-
-
-
+.detalle {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    padding-left: 30px;
+}
+.titulo-pelicula  {
+    display: flex;
+    justify-content: center;
+}
+.descripcion-actores {
+    display: grid;
+    grid-template-rows: ;
+}
+.reproducir button{
+    cursor: pointer;
+    width: 150px;
+    border-radius: 5px 5px 5px 5px;
+    border: 1px black solid;
+}
+.reproducir button img {
+    width: 100%;
+}
 
 
 
