@@ -105,7 +105,7 @@ body {
 }
 .descripcion-actores {
     display: grid;
-    grid-template-rows: ;
+    grid-template-rows: 1fr 1fr 1fr;
 }
 .reproducir button{
     cursor: pointer;
