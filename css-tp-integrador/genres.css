@@ -3,13 +3,13 @@ body {
 }
 
 .enreeltitulo {
-    font-family: sans-serif;
+    font-family: 'Josefin Sans', sans-serif;
    font-size: 50px;
    padding-left: 50px;
 }
 
 .textosheader {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Josefin Sans', sans-serif;
 }
 
 .header1 ul  {
@@ -92,7 +92,7 @@ body {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Josefin Sans', sans-serif;
     padding-bottom: 30px;
     
 }
