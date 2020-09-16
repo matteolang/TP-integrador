@@ -1,15 +1,23 @@
+
 body {
-    background-color:#f8f8ff;
+    background-color: #f8f8ff;
 }
 
 .enreeltitulo {
-    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Josefin Sans', sans-serif;;
    font-size: 50px;
-   padding-left: 50px;
 }
 
 .textosheader {
-    font-family: 'Josefin Sans', sans-serif;
+    font-family:'Josefin Sans', sans-serif;;
+}
+
+.header1 {
+    border-bottom: black 1px solid;
+}
+
+.header2 {
+    border-bottom: solid 1px black;
 }
 
 .header1 ul  {
@@ -19,7 +27,6 @@ body {
     list-style: none;
     padding-left: 0px;
     padding-right: 100px;
-
 }
 
 .header1 ul li a {
@@ -40,8 +47,9 @@ body {
 .header2 ul{
     display: flex;
     list-style: none;
-    gap: 30px;
+    width: 100%;
     padding-left: 350px;
+    justify-content: space-around;
 }
 
 .header2 ul li a {
@@ -49,6 +57,7 @@ body {
     color: black;
 
 }
+
 
 .searchbar {
     display: flex;
@@ -86,6 +95,7 @@ body {
 .section-generos {
     padding-top: 30px;
     padding-bottom: 100px;
+
 }
 
 .titulo-generos {
@@ -124,6 +134,11 @@ body {
     width: 30px;
 }
 
+.footer {
+    border-top: black 1px solid;
+
+}
+
 .footer div {
     display: flex;
     justify-content: space-between;
@@ -132,9 +147,11 @@ body {
 
 .footer div ul {
     display: flex;
-    gap: 30px;
+    width: 150px;
     list-style: none;
     align-items: center;
+    justify-content: space-between;
+   
 }
 
 

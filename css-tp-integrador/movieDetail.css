@@ -6,11 +6,18 @@ body {
 .enreeltitulo {
     font-family: 'Josefin Sans', sans-serif;;
    font-size: 50px;
-   padding-left: 50px;
 }
 
 .textosheader {
     font-family:'Josefin Sans', sans-serif;;
+}
+
+.header1 {
+    border-bottom: black 1px solid;
+}
+
+.header2 {
+    border-bottom: solid 1px black;
 }
 
 .header1 ul  {
@@ -20,7 +27,6 @@ body {
     list-style: none;
     padding-left: 0px;
     padding-right: 100px;
-
 }
 
 .header1 ul li a {
@@ -41,8 +47,9 @@ body {
 .header2 ul{
     display: flex;
     list-style: none;
-    gap: 30px;
+    width: 100%;
     padding-left: 350px;
+    justify-content: space-around;
 }
 
 .header2 ul li a {
@@ -89,6 +96,7 @@ body {
     display: flex;
     justify-content: space-between;
     padding: 20px;
+    height: 450px;
 }
 .foto-detalle a img{
     width: 100%;
@@ -102,11 +110,23 @@ body {
 .titulo-pelicula  {
     display: flex;
     justify-content: center;
+    padding-bottom: 0px;
 }
+
+.titulo-pelicula h2 {
+    font-family: 'Josefin Sans', sans-serif;
+    text-decoration: underline;
+}
+
 .descripcion-actores {
-    display: grid;
-    grid-template-rows: 1fr 1fr 1fr;
+    display: flex;
+    flex-direction: column;
 }
+
+.sinopsis p {
+    font-family: 'Josefin Sans', sans-serif;
+}
+
 .reproducir button{
     cursor: pointer;
     width: 150px;
@@ -118,6 +138,9 @@ body {
 }
 
 
+.footer {
+    border-top: black 1px solid;
+}
 
 .footer div {
     display: flex;
@@ -127,9 +150,11 @@ body {
 
 .footer div ul {
     display: flex;
-    gap: 30px;
+    width: 150px;
     list-style: none;
     align-items: center;
+    justify-content: space-between;
+   
 }
 
 
