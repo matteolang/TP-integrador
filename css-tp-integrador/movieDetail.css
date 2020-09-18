@@ -130,8 +130,8 @@ body {
 .reproducir button{
     cursor: pointer;
     width: 150px;
-    border-radius: 5px 5px 5px 5px;
-    border: 1px black solid;
+    border: none;
+    background-color: transparent;
 }
 .reproducir button img {
     width: 100%;
