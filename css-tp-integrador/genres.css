@@ -1,6 +1,6 @@
 
 body {
-    background-color: #f8f8ff;
+    background-color: #f4f1bb;
    
 }
 
@@ -10,7 +10,19 @@ body {
 }
 
 .textosheader {
-    font-family:'Josefin Sans', sans-serif;;
+    width: 225px;
+    font-family:'Josefin Sans', sans-serif;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.textosheader img {
+    width: 25px;
+}
+
+.homegeneros {
+    font-family: 'Josefin Sans', sans-serif;
 }
 
 .header1 {
@@ -27,7 +39,7 @@ body {
     align-items: center;
     list-style: none;
     padding-left: 0px;
-    padding-right: 100px;
+    padding-right: 20px;
 }
 
 .header1 ul li a {
@@ -50,7 +62,7 @@ body {
     list-style: none;
     width: 100%;
     padding-left: 350px;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 .header2 ul li a {
@@ -76,6 +88,7 @@ body {
     border: 1px solid black;
     padding: 5px;
     border-radius: 5px 0px 0px 5px;
+    
 }
 
 .searchbutton {
