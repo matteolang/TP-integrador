@@ -83,7 +83,7 @@ body {
 
 .searchterm {
     border-right: none;
-    border: 1px solid black;
+    border:none;
     padding: 5px;
     border-radius: 5px 0px 0px 5px;
     
@@ -91,10 +91,11 @@ body {
 
 .searchbutton {
     width: 40px;
-    border: 1px solid black;
-    border-left: none;
+    border: none;
+    border-left: 1px solid grey;
     border-radius: 0 5px 5px 0;
     cursor: pointer;
+    background-color: white;
 }
 
 .iconobuscar {
