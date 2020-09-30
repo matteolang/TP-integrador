@@ -66,7 +66,10 @@ body {
 
 .header2 ul li a {
     text-decoration: none;
-    color: black;
+    color: #f4f1bb;
+    background-color: black;
+    border-radius: 10px 10px 10px 10px;
+    padding: 6px;
 
 }
 
@@ -176,7 +179,10 @@ body {
 
 .footer ul li a {
     text-decoration: none;
-    color: black;
+    color: #f4f1bb;
+    background-color: black;
+    border-radius: 10px 10px 10px 10px;
+    padding: 6px;
 }
 
 .logochico {

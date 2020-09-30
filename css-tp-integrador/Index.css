@@ -69,7 +69,10 @@ body {
 
 .header2 ul li a {
     text-decoration: none;
-    color: black;
+    color: #f4f1bb;
+    background-color: black;
+    border-radius: 10px 10px 10px 10px;
+    padding: 6px;
 
 }
 
@@ -182,8 +185,11 @@ font-family: 'Josefin Sans', sans-serif;
 
 
 .footer ul li a {
-    text-decoration: none;
-    color: black;
+     text-decoration: none;
+    color: #f4f1bb;
+    background-color: black;
+    border-radius: 10px 10px 10px 10px;
+    padding: 6px;
 }
 
 .logochico {
@@ -194,6 +200,10 @@ font-family: 'Josefin Sans', sans-serif;
     display: flex;
     align-items: center;
     padding-right: 20px;
+}
+
+.nombresfooter {
+    font-family:'Josefin Sans', sans-serif;
 }
 
 @media only screen and (max-width: 420px) {
@@ -216,7 +226,7 @@ font-family: 'Josefin Sans', sans-serif;
            display: flex;
            align-items: flex-end;
            justify-content: space-around;
-           padding-right: 15px;
+           padding-right: 5px;
            
        }
        
@@ -225,7 +235,7 @@ font-family: 'Josefin Sans', sans-serif;
        }
 
        .textosheader a {
-           font-size: 8px;
+           font-size: 9px;
            white-space: nowrap;
        }
 
@@ -237,7 +247,7 @@ font-family: 'Josefin Sans', sans-serif;
        
        .header1 {
            border-bottom: black 1px solid;
-           width: 340px;
+           
        }
        
        
@@ -262,29 +272,27 @@ font-family: 'Josefin Sans', sans-serif;
        }
        
        
-       
-       section.header2 {
-          padding-left: 0px;
-            width: 10px;
-          display: flex;
-          justify-content: space-between;
-            padding-top: 10px;
-           padding-bottom: 10px;
-           border-bottom: solid 1px black;
-       }
-       
-       
-       .header2 ul{
-           display: grid;
-           grid-template-columns: 1fr 1fr;
-           gap: 30px;
-           width: 50px;
+       .header2 {
            
+           display: flex;
+          
+           padding-left: 0px;
+           justify-content: space-between;
+           padding-right: 10px;
+       }
+    
+       .header2 ul {
+           padding-left: 0px;
+           width: 100px;
        }
        
        .header2 ul li a {
            text-decoration: none;
-           color: black;
+           color: #f4f1bb;
+           border: 1px solid  black;
+           border-radius: 10px 10px 10px 10px;
+           padding: 3px;
+           background-color: black;
        
        }
        
@@ -307,12 +315,13 @@ font-family: 'Josefin Sans', sans-serif;
            padding: 5px;
            border-radius: 5px 0px 0px 5px;
            width: 60px;
-           height: 10px;
+           height: 8px;
+           font-size: 10px;
        }
        
        .searchbutton {
            width: 30px;
-           height: 20px;
+           height: 18px;
            border: none;
            border-left: 1px solid grey;
            border-radius: 0 5px 5px 0;
@@ -329,29 +338,32 @@ font-family: 'Josefin Sans', sans-serif;
        }
        
        .section-body {
-           padding-bottom: 35px;
-           padding-top: 35px;
+           padding-bottom: 0px;
+           padding-top: 0px;
        }
        
        .titulos-colecciones {
        display: flex;
        justify-content: space-around;
        font-family: 'Josefin Sans', sans-serif;
+       font-size: 12px;
        }
        
        .container1 {
           display: flex;
           justify-content: space-around;
           
-          padding-top: 20px ;
-           padding-bottom: 20px;
+          padding-top: 0px ;
+           padding-bottom: 0px;
            align-items: center;
-           padding-bottom: 30px;
+           
        }
        
        
        .caja img {
            border-radius: 5px 5px 5px 5px;
+           margin-left: 3px;
+           margin-right: 3px;
        }
        
        .flecha {
@@ -359,12 +371,19 @@ font-family: 'Josefin Sans', sans-serif;
            width: 50px;
            background-color: transparent;
            border: none;
-           cursor: pointer;
-       
+           cursor: pointer;   
+       }
+
+       .flechaizq {
+           padding-left: 20px;
        }
        
+       .flechader {
+           padding-right: 20px;
+       }
+
        .flecha img {
-           width: 30px;
+           width: 15px;
        }
        
        .pelicula-serie {
@@ -374,45 +393,82 @@ font-family: 'Josefin Sans', sans-serif;
        }
        
        .pelicula-serie img {
-           width: 200px;
-           height: 120px;
+           width: 100px;
+           height: 60px;
            display: block;
        }
+
+       #paramedic {
+          display: none;
+       }
+
+       #miracle {
+        display: none;
+       }
        
+       #schindler {
+        display: none;
+       }
+
+       #casapapel {
+        display: none;
+       }
+
+       #americansniper {
+        display: none;
+       }
+
+       #hacksaw {
+        display: none;
+       }
        
        .footer {
            border-top: black 1px solid;
+           margin-top: 30px;
        }
        
        .footer div {
            display: flex;
            justify-content: space-between;
+           padding-left: 0px;
            
        }
        
        .footer div ul {
            display: flex;
-           width: 150px;
+           width: 70px;
            list-style: none;
            align-items: center;
            justify-content: space-between;
+           padding-right: 40px;
+           padding-left: 40px;
           
        }
        
        
        .footer ul li a {
            text-decoration: none;
-           color: black;
+           color: #f4f1bb;
+           border-radius: 10px 10px 10px 10px;
+           border: 1px solid black;
+           padding: 3px;
+           background-color: black;
        }
        
        .logochico {
-           width: 50px;
+           width: 0px;
        }
        
-       .divs-footer {
-           display: flex;
-           align-items: center;
-           padding-right: 20px;
-       }
+      .divs-footer {
+          padding-right: 0px;
+      }
 
+       .nombresfooter {
+        font-family:'Josefin Sans', sans-serif;
+        font-size: 8px;
+    }
+
+    .footer div.searchbar {
+        padding-left: 0px;
+    }
 }
