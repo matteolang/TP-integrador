@@ -4,9 +4,14 @@ body {
    
 }
 
+::-webkit-scrollbar {
+    display: none;
+}
+
 .enreeltitulo {
     font-family: 'Josefin Sans', sans-serif;;
    font-size: 50px;
+   padding-right: 70px;
 }
 
 .textosheader {
@@ -63,9 +68,10 @@ body {
 .header2 ul{
     display: flex;
     list-style: none;
-    width: 100%;
-    padding-left: 350px;
-    justify-content: space-between;
+    width: 200px;
+    padding-left: 50px;
+    justify-content: space-around;
+    padding-right: 110px;
 }
 
 .header2 ul li a {
@@ -287,8 +293,11 @@ font-family: 'Josefin Sans', sans-serif;
        }
     
        .header2 ul {
-           padding-left: 0px;
-           width: 100px;
+           width: 200px;
+           margin-left: 100px;
+           justify-content: space-between;
+           padding-right: 0px;
+           padding-left: 70px;
        }
        
        .header2 ul li a {
