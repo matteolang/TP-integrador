@@ -211,6 +211,7 @@ font-family: 'Josefin Sans', sans-serif;
 
     body {
         background-color: #f4f1bb;
+          width: 100%;
           
        }
        
@@ -247,6 +248,8 @@ font-family: 'Josefin Sans', sans-serif;
        
        .header1 {
            border-bottom: black 1px solid;
+           padding-top: 20px;
+           padding-bottom: 10px;
            
        }
        
@@ -279,6 +282,9 @@ font-family: 'Josefin Sans', sans-serif;
            padding-left: 0px;
            justify-content: space-between;
            padding-right: 10px;
+           padding-bottom: 20px;
+           padding-top: 20px;
+
        }
     
        .header2 ul {
@@ -338,8 +344,8 @@ font-family: 'Josefin Sans', sans-serif;
        }
        
        .section-body {
-           padding-bottom: 0px;
-           padding-top: 0px;
+           padding-bottom: 20px;
+           padding-top: 20px;
        }
        
        .titulos-colecciones {
@@ -347,14 +353,16 @@ font-family: 'Josefin Sans', sans-serif;
        justify-content: space-around;
        font-family: 'Josefin Sans', sans-serif;
        font-size: 12px;
+       margin-top: 20px;
+       
        }
        
        .container1 {
           display: flex;
           justify-content: space-around;
           
-          padding-top: 0px ;
-           padding-bottom: 0px;
+          padding-top: 0px;
+           padding-bottom: 20px;
            align-items: center;
            
        }
@@ -425,6 +433,7 @@ font-family: 'Josefin Sans', sans-serif;
        .footer {
            border-top: black 1px solid;
            margin-top: 30px;
+           padding-top: 25px;
        }
        
        .footer div {
@@ -456,7 +465,8 @@ font-family: 'Josefin Sans', sans-serif;
        }
        
        .logochico {
-           width: 0px;
+           display: none;
+           
        }
        
       .divs-footer {
