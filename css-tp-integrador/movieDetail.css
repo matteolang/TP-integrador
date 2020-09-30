@@ -146,14 +146,43 @@ body {
     font-family: 'Josefin Sans', sans-serif;
 }
 
+.rating img {
+    width: 100px;
+    margin-bottom: 100px;
+}
+
+.reproducir {
+    display: flex;
+    align-items: center;
+    
+}
+
+.reproducir a {
+    text-decoration: none;
+    color:  #f4f1bb;
+    background-color: black;
+    font-family: 'Josefin Sans', sans-serif;
+    padding: 14px;
+    border: 1px solid black;
+    border-left: none;
+    border-radius: 0px 10px 10px 0px;
+    
+}
+
 .reproducir button{
     cursor: pointer;
-    width: 150px;
+    width: 50px;
     border: none;
     background-color: transparent;
+    border: black 2px solid;
+    border-right: none;
+    border-radius: 10px 0px 0px 10px;
+    padding-top: 9px;
+    padding-bottom: 10px;
+    padding-left: 9px;
 }
 .reproducir button img {
-    width: 100%;
+    width: 20px;
 }
 
 
