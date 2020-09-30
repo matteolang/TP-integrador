@@ -10,11 +10,11 @@ body {
 }
 
 .textosheader {
-    width: 225px;
+    width: 150px;
     font-family:'Josefin Sans', sans-serif;
     display: flex;
     align-items: flex-end;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .textosheader img {

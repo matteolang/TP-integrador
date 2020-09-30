@@ -10,12 +10,13 @@ body {
 }
 
 .textosheader {
-    width: 225px;
+    width: 150px;
     font-family:'Josefin Sans', sans-serif;
     display: flex;
     align-items: flex-end;
-    justify-content: space-between;
+    justify-content: space-around;
 }
+
 
 .textosheader img {
     width: 25px;
@@ -222,13 +223,11 @@ font-family: 'Josefin Sans', sans-serif;
        }
        
        .textosheader {
-           width: 50px;
+           width: 75px;
            font-family:'Josefin Sans', sans-serif;
            display: flex;
-           align-items: flex-end;
-           justify-content: space-around;
-           padding-right: 5px;
-           
+           align-items:  center;
+           justify-content: space-between;           
        }
        
        .textosheader img {
@@ -236,7 +235,7 @@ font-family: 'Josefin Sans', sans-serif;
        }
 
        .textosheader a {
-           font-size: 9px;
+           font-size: 10px;
            white-space: nowrap;
        }
 
@@ -281,7 +280,7 @@ font-family: 'Josefin Sans', sans-serif;
           
            padding-left: 0px;
            justify-content: space-between;
-           padding-right: 10px;
+           padding-right: 20px;
            padding-bottom: 20px;
            padding-top: 20px;
 
@@ -445,11 +444,11 @@ font-family: 'Josefin Sans', sans-serif;
        
        .footer div ul {
            display: flex;
-           width: 70px;
+           width: 100px;
            list-style: none;
            align-items: center;
            justify-content: space-between;
-           padding-right: 40px;
+           padding-right: 20px;
            padding-left: 40px;
           
        }
