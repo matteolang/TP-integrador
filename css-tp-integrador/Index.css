@@ -195,3 +195,224 @@ font-family: 'Josefin Sans', sans-serif;
     align-items: center;
     padding-right: 20px;
 }
+
+@media only screen and (max-width: 420px) {
+
+
+    body {
+        background-color: #f4f1bb;
+          
+       }
+       
+       .enreeltitulo {
+           font-family: 'Josefin Sans', sans-serif;;
+          font-size: 15px;
+          padding-right: 10px;
+       }
+       
+       .textosheader {
+           width: 50px;
+           font-family:'Josefin Sans', sans-serif;
+           display: flex;
+           align-items: flex-end;
+           justify-content: space-around;
+           padding-right: 15px;
+           
+       }
+       
+       .textosheader img {
+           width: 10px;
+       }
+
+       .textosheader a {
+           font-size: 8px;
+           white-space: nowrap;
+       }
+
+
+       .homegeneros {
+           font-family: 'Josefin Sans', sans-serif;
+           font-size: 10px;
+       }
+       
+       .header1 {
+           border-bottom: black 1px solid;
+           width: 340px;
+       }
+       
+       
+
+       
+       .header1 ul  {
+           display: flex;
+           justify-content: space-around;
+           align-items: center;
+           list-style: none;
+           padding-left: 0px;
+           
+       }
+       
+       .enreellogo {
+           width: 70px;
+       }
+
+       .header1 ul li a {
+           text-decoration: none;
+           color: black;
+       }
+       
+       
+       
+       section.header2 {
+          padding-left: 0px;
+            width: 10px;
+          display: flex;
+          justify-content: space-between;
+            padding-top: 10px;
+           padding-bottom: 10px;
+           border-bottom: solid 1px black;
+       }
+       
+       
+       .header2 ul{
+           display: grid;
+           grid-template-columns: 1fr 1fr;
+           gap: 30px;
+           width: 50px;
+           
+       }
+       
+       .header2 ul li a {
+           text-decoration: none;
+           color: black;
+       
+       }
+       
+       
+       .searchbar {
+           display: flex;
+           justify-content: space-around;
+           align-items: center;
+           
+       }
+       
+       .search {
+           display: flex;
+           width: 100%;
+       }
+       
+       .searchterm {
+           border-right: none;
+           border: none;
+           padding: 5px;
+           border-radius: 5px 0px 0px 5px;
+           width: 60px;
+           height: 10px;
+       }
+       
+       .searchbutton {
+           width: 30px;
+           height: 20px;
+           border: none;
+           border-left: 1px solid grey;
+           border-radius: 0 5px 5px 0;
+           cursor: pointer;
+           background-color: white;
+           
+       }
+       
+       .iconobuscar {
+           width: 13px;
+           display: flex;
+           align-items: center;
+           padding: 2px;
+       }
+       
+       .section-body {
+           padding-bottom: 35px;
+           padding-top: 35px;
+       }
+       
+       .titulos-colecciones {
+       display: flex;
+       justify-content: space-around;
+       font-family: 'Josefin Sans', sans-serif;
+       }
+       
+       .container1 {
+          display: flex;
+          justify-content: space-around;
+          
+          padding-top: 20px ;
+           padding-bottom: 20px;
+           align-items: center;
+           padding-bottom: 30px;
+       }
+       
+       
+       .caja img {
+           border-radius: 5px 5px 5px 5px;
+       }
+       
+       .flecha {
+           
+           width: 50px;
+           background-color: transparent;
+           border: none;
+           cursor: pointer;
+       
+       }
+       
+       .flecha img {
+           width: 30px;
+       }
+       
+       .pelicula-serie {
+           text-decoration: none;
+           color: black;
+           
+       }
+       
+       .pelicula-serie img {
+           width: 200px;
+           height: 120px;
+           display: block;
+       }
+       
+       
+       .footer {
+           border-top: black 1px solid;
+       }
+       
+       .footer div {
+           display: flex;
+           justify-content: space-between;
+           
+       }
+       
+       .footer div ul {
+           display: flex;
+           width: 150px;
+           list-style: none;
+           align-items: center;
+           justify-content: space-between;
+          
+       }
+       
+       
+       .footer ul li a {
+           text-decoration: none;
+           color: black;
+       }
+       
+       .logochico {
+           width: 50px;
+       }
+       
+       .divs-footer {
+           display: flex;
+           align-items: center;
+           padding-right: 20px;
+       }
+
+}
