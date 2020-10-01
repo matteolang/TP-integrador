@@ -82,7 +82,6 @@ body {
 }
 
 .searchterm {
-    border-right: none;
     border:none;
     padding: 5px;
     border-radius: 5px 0px 0px 5px;  
@@ -167,7 +166,6 @@ body {
 .reproducir button{
     cursor: pointer;
     width: 50px;
-    border: none;
     background-color: transparent;
     border: black 2px solid;
     border-right: none;
@@ -320,7 +318,6 @@ body {
        }
        
        .searchterm {
-           border-right: none;
            border: none;
            padding: 5px;
            border-radius: 5px 0px 0px 5px;
@@ -410,7 +407,6 @@ body {
     .reproducir button{
         cursor: pointer;
         width: 50px;
-        border: none;
         background-color: transparent;
         border: black 2px solid;
         border-right: none;
