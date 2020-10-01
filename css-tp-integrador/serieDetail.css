@@ -422,12 +422,12 @@ body {
         width: 330px;
         height: 190px;
         border-radius: 5px 5px 5px 5px;
-        margin-left: 25px;
+        margin-left: 15px;
         margin-top: 0px;
     }
 
     .detalle {
-        padding-left: 30px;
+        padding-left: 15px;
     }
 
     .titulo-pelicula  {
