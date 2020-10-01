@@ -61,7 +61,7 @@ body {
     list-style: none;
     width: 200px;
     justify-content: space-around;
-    }
+}
 
 .header2 ul li a {
     text-decoration: none;
@@ -116,8 +116,8 @@ body {
 .foto-detalle a img{
     width: 670px;
     height: 380px;
-    object-fit: cover;
     border-radius: 5px 5px 5px 5px;
+    margin-top: 15px;
 }
 
 .detalle {
@@ -138,6 +138,7 @@ body {
 .descripcion-actores {
     display: flex;
     flex-direction: column;
+    padding-bottom: 0px;
 }
 
 .sinopsis p {
@@ -425,6 +426,7 @@ body {
         height: 190px;
         border-radius: 5px 5px 5px 5px;
         margin-left: 25px;
+        margin-top: 0px;
     }
 
     .detalle {
