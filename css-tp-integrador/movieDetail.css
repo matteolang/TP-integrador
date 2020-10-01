@@ -119,9 +119,7 @@ body {
     height: 380px;
     border-radius: 5px 5px 5px 5px;
 }
-.detalle {
-    display: grid;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
+.detalle { 
     padding-left: 30px;
 }
 .titulo-pelicula  {
@@ -176,9 +174,10 @@ body {
     border: black 2px solid;
     border-right: none;
     border-radius: 10px 0px 0px 10px;
-    height: 45px;
-    padding-top: 2px;
+   padding-bottom: 10px;
+   padding-top: 9px;
 }
+
 .reproducir button img {
     width: 20px;
 }
@@ -384,8 +383,6 @@ body {
     }
 
     .detalle {
-        display: grid;
-        grid-template-rows: 1fr 1fr 1fr 1fr;
         padding-left: 0px;
 
     }
@@ -450,18 +447,6 @@ body {
     .reproducir button img {
         width: 20px;
     }
-    
-    
-
-
-
-
-
-
-
-
-
-
 
   
        .footer {
