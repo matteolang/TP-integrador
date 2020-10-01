@@ -119,12 +119,14 @@ body {
 
 }
 
+
 .titulo-generos {
     display: flex;
     justify-content: space-around;
     align-items: center;
     font-family: 'Josefin Sans', sans-serif;
     padding-bottom: 30px;
+    font-size: 30px;
     
 }
 
@@ -136,12 +138,10 @@ body {
 
 .genero a.accion{
     border-radius: 10px 10px 10px 10px;
-    font-family: 'Josefin Sans', sans-serif;
     background-image: url(../imagenes-tp-integrador/peliculas-accion.jpeg);
     background-size: 135%;
-    padding: 20px;
-    width: 200px;
-    height: 130px;
+    width: 250px;
+    height: 170px;
     display: flex;
     align-items: flex-end;
     justify-content: center;
@@ -150,12 +150,10 @@ body {
 
 .genero a.terror{
     border-radius: 10px 10px 10px 10px;
-    font-family: 'Josefin Sans', sans-serif;
     background-image: url(../imagenes-tp-integrador/peliculas-terror.jpg);
     background-size: 135%;
-    padding: 20px;
-    width: 200px;
-    height: 130px;
+    width: 250px;
+    height: 170px;
     display: flex;
     align-items: flex-end;
     justify-content: center;
@@ -164,12 +162,10 @@ body {
 
 .genero a.comedia{
     border-radius: 10px 10px 10px 10px;
-    font-family: 'Josefin Sans', sans-serif;
     background-image: url(../imagenes-tp-integrador/peliculas-comedia.jpg);
     background-size: 135%;
-    padding: 20px;
-    width: 200px;
-    height: 130px;
+    width: 250px;
+    height: 170px;
     display: flex;
     align-items: flex-end;
     justify-content: center;
@@ -178,12 +174,10 @@ body {
 
 .genero a.suspenso{
     border-radius: 10px 10px 10px 10px;
-    font-family: 'Josefin Sans', sans-serif;
     background-image: url(../imagenes-tp-integrador/peliculas-suspenso.jpg);
     background-size: 170%;
-    padding: 20px;
-    width: 200px;
-    height: 130px;
+    width: 250px;
+    height: 170px;
     display: flex;
     align-items: flex-end;
     justify-content: center;
@@ -192,15 +186,13 @@ body {
 
 .genero a {
     text-decoration: none;
-    color: #f4f1bb;
+    color: black;
 }
 
 .genero a p {
-    border-radius: 10px 10px 10px 10px;
-    background-color: black;
-    padding: 10px;
-    
-    
+    display: flex;
+    justify-content: center;
+    font-family: 'Josefin Sans', sans-serif;
 }
 
 
@@ -260,4 +252,249 @@ body {
 
 .nombresfooter{
     font-family: 'Josefin Sans', sans-serif;
+}
+
+@media only screen and (max-width: 420px) {
+
+
+    body {
+        background-color: #f4f1bb;
+          width: 100%;
+          
+       }
+       
+       .enreeltitulo {
+           font-family: 'Josefin Sans', sans-serif;;
+          font-size: 25px;
+          padding-right: 10px;
+       }
+       
+       .textosheader {
+           width: 75px;
+           font-family:'Josefin Sans', sans-serif;
+           display: flex;
+           align-items: flex-end;
+           justify-content: space-between;
+           padding-right: 0px;
+           
+       }
+       
+       .textosheader img {
+           width: 10px;
+       }
+
+       .textosheader a {
+           font-size: 10px;
+           white-space: nowrap;
+       }
+
+
+       .homegeneros {
+           font-family: 'Josefin Sans', sans-serif;
+           font-size: 10px;
+       }
+       
+       .header1 {
+           border-bottom: black 1px solid;
+           padding-top: 20px;
+           padding-bottom: 10px;
+           
+       }
+       
+       
+
+       
+       .header1 ul  {
+           display: flex;
+           justify-content: space-around;
+           align-items: center;
+           list-style: none;
+           padding-left: 0px;
+           
+       }
+       
+       .enreellogo {
+           width: 70px;
+           margin-right: 30px;
+       }
+
+       .header1 ul li a {
+           text-decoration: none;
+           color: black;
+       }
+       
+       
+       .header2 {
+           
+           display: flex;
+          
+           padding-left: 0px;
+           justify-content: space-between;
+           padding-right: 20px;
+           padding-bottom: 20px;
+           padding-top: 20px;
+
+       }
+    
+       .header2 ul {
+        width: 200px;
+        margin-left: 100px;
+        justify-content: space-between;
+        padding-right: 0px;
+        padding-left: 70px;
+    }
+
+       .header2 ul li a {
+           text-decoration: none;
+           color: #f4f1bb;
+           border: 1px solid  black;
+           border-radius: 10px 10px 10px 10px;
+           padding: 3px;
+           background-color: black;
+       
+       }
+       
+       
+       .searchbar {
+           display: flex;
+           justify-content: space-around;
+           align-items: center;
+           
+       }
+       
+       .search {
+           display: flex;
+           width: 100%;
+       }
+       
+       .searchterm {
+           border-right: none;
+           border: none;
+           padding: 5px;
+           border-radius: 5px 0px 0px 5px;
+           width: 60px;
+           height: 8px;
+           font-size: 10px;
+       }
+       
+       .searchbutton {
+           width: 30px;
+           height: 18px;
+           border: none;
+           border-left: 1px solid grey;
+           border-radius: 0 5px 5px 0;
+           cursor: pointer;
+           background-color: white;
+           
+       }
+       
+       .iconobuscar {
+           width: 13px;
+           display: flex;
+           align-items: center;
+           padding: 2px;
+       } 
+
+       .section-generos {
+           padding-bottom: 20px;
+           padding-top: 20px;
+       }
+
+       .titulo-generos {
+           padding-bottom: 0px;
+           font-size: 20px;
+       }
+
+       .caja-generos {
+           flex-direction: column;
+           justify-content: space-between;
+           height: 900px;
+            margin-top: 50px;
+       }
+       
+       .genero a.terror {
+           width: 300px;
+           height: 160px;
+       }
+
+
+       .genero a.accion {
+           width: 300px;
+           height: 160px;
+       }
+
+       .genero a.comedia {
+           width: 300px;
+           height: 160px;
+       }
+
+       .genero a.suspenso {
+           width: 300px;
+           height: 160px;
+       }
+
+        .flecha {
+           display: none;
+        }
+
+       
+
+       .genero a p {
+           font-size: 15px;       
+       }
+
+
+
+       .footer {
+        border-top: black 1px solid;
+        margin-top: 30px;
+        padding-top: 25px;
+        
+    }
+    
+    .footer div {
+        display: flex;
+        justify-content: space-between;
+        padding-left: 0px;
+        
+    }
+    
+    .footer div ul {
+        display: flex;
+        width: 100px;
+        list-style: none;
+        align-items: center;
+        justify-content: space-between;
+        padding-right: 30px;
+        padding-left: 30px;
+       
+    }
+    
+    
+    .footer ul li a {
+        text-decoration: none;
+        color: #f4f1bb;
+        border-radius: 10px 10px 10px 10px;
+        border: 1px solid black;
+        padding: 3px;
+        background-color: black;
+    }
+    
+    .logochico {
+        display: none;
+        
+    }
+    
+   .divs-footer {
+       padding-right: 0px;
+   }
+
+    .nombresfooter {
+     font-family:'Josefin Sans', sans-serif;
+     font-size: 8px;
+ }
+
+ .footer div.searchbar {
+     padding-left: 0px;
+ }
 }
