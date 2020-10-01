@@ -106,7 +106,6 @@ body {
     padding: 3px;
 }
 
-
 .section-body{
     display: flex;
     justify-content: space-between;
@@ -114,6 +113,7 @@ body {
     padding-left: 20px;
     height: 450px;
 }
+
 .foto-detalle a img{
     width: 670px;
     height: 380px;
@@ -176,9 +176,8 @@ body {
     border: black 2px solid;
     border-right: none;
     border-radius: 10px 0px 0px 10px;
-    padding-top: 9px;
-    padding-bottom: 10px;
-    padding-left: 9px;
+    height: 45px;
+    padding-top: 2px;
 }
 .reproducir button img {
     width: 20px;

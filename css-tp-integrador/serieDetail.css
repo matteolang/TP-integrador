@@ -299,8 +299,7 @@ height: 15px;
 
     body {
         background-color: #f4f1bb;
-          width: 100%;
-          
+        width: 100%;         
        }
        
        .enreeltitulo {
@@ -341,9 +340,7 @@ height: 15px;
            
        }
        
-       
-
-       
+             
        .header1 ul  {
            display: flex;
            justify-content: space-around;
@@ -443,7 +440,7 @@ height: 15px;
         padding-top:  50px;
         height: 500px;
         padding-left: 0px;
-        margin-bottom: 250px;
+        padding-bottom: 200px;
     }
 
     .foto-detalle a img{

@@ -144,7 +144,6 @@ font-family: 'Josefin Sans', sans-serif;
     background-color: transparent;
     border: none;
     cursor: pointer;
-
 }
 
 .flecha img {
@@ -158,8 +157,8 @@ font-family: 'Josefin Sans', sans-serif;
 }
 
 .pelicula-serie img {
-    width: 200px;
-    height: 120px;
+    width: 266px;
+    height: 160px;
     display: block;
 }
 
