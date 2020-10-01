@@ -50,11 +50,10 @@ body {
 
 .header2 {
     display: flex;
-    padding-left: 90px;
-    justify-content: space-between;
-    padding-right: 500px;
+    justify-content: center;
     padding-top: 10px;
     padding-bottom: 10px;
+    border-bottom: solid 1px black;
 }
 
 
@@ -62,10 +61,8 @@ body {
     display: flex;
     list-style: none;
     width: 200px;
-    padding-left: 50px;
     justify-content: space-around;
-    padding-right: 110px;
-}
+    }
 
 .header2 ul li a {
     text-decoration: none;
@@ -73,7 +70,6 @@ body {
     background-color: black;
     border-radius: 10px 10px 10px 10px;
     padding: 6px;
-
 }
 
 
