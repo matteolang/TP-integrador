@@ -55,7 +55,6 @@ body {
     border-bottom: solid 1px black;
 }
 
-
 .header2 ul{
     display: flex;
     list-style: none;
@@ -86,8 +85,7 @@ body {
     border-right: none;
     border:none;
     padding: 5px;
-    border-radius: 5px 0px 0px 5px;
-    
+    border-radius: 5px 0px 0px 5px;  
 }
 
 .searchbutton {
@@ -119,9 +117,11 @@ body {
     height: 380px;
     border-radius: 5px 5px 5px 5px;
 }
+
 .detalle { 
     padding-left: 30px;
 }
+
 .titulo-pelicula  {
     display: flex;
     justify-content: flex-start;
@@ -151,7 +151,6 @@ body {
 .reproducir {
     display: flex;
     align-items: center;
-    
 }
 
 .reproducir a {
@@ -163,7 +162,6 @@ body {
     border: 1px solid black;
     border-left: none;
     border-radius: 0px 10px 10px 0px;
-    
 }
 
 .reproducir button{
@@ -174,14 +172,14 @@ body {
     border: black 2px solid;
     border-right: none;
     border-radius: 10px 0px 0px 10px;
-   padding-bottom: 10px;
-   padding-top: 9px;
+    padding-top: 9px;
+    padding-bottom: 10px;
+    padding-left: 10px;
 }
 
 .reproducir button img {
     width: 20px;
 }
-
 
 .footer {
     border-top: black 1px solid;
@@ -198,10 +196,8 @@ body {
     width: 150px;
     list-style: none;
     align-items: center;
-    justify-content: space-between;
-   
+    justify-content: space-between
 }
-
 
 .footer ul li a {
     text-decoration: none;
@@ -230,8 +226,7 @@ body {
 
     body {
         background-color: #f4f1bb;
-          width: 100%;
-          
+          width: 100%;  
        }
        
        .enreeltitulo {
@@ -247,7 +242,6 @@ body {
            align-items: flex-end;
            justify-content: space-between;
            padding-right: 0px;
-           
        }
        
        .textosheader img {
@@ -259,7 +253,6 @@ body {
            white-space: nowrap;
        }
 
-
        .homegeneros {
            font-family: 'Josefin Sans', sans-serif;
            font-size: 10px;
@@ -268,12 +261,8 @@ body {
        .header1 {
            border-bottom: black 1px solid;
            padding-top: 20px;
-           padding-bottom: 10px;
-           
+           padding-bottom: 10px;  
        }
-       
-       
-
        
        .header1 ul  {
            display: flex;
@@ -281,7 +270,6 @@ body {
            align-items: center;
            list-style: none;
            padding-left: 0px;
-           
        }
        
        .enreellogo {
@@ -294,17 +282,13 @@ body {
            color: black;
        }
        
-       
        .header2 {
-           
            display: flex;
-          
            padding-left: 0px;
            justify-content: space-between;
            padding-right: 20px;
            padding-bottom: 20px;
            padding-top: 20px;
-
        }
     
        .header2 ul {
@@ -313,7 +297,6 @@ body {
         justify-content: space-between;
         padding-right: 0px;
         padding-left: 70px;
-
     }
 
        .header2 ul li a {
@@ -323,9 +306,7 @@ body {
            border-radius: 10px 10px 10px 10px;
            padding: 3px;
            background-color: black;
-       
        }
-       
        
        .searchbar {
            display: flex;
@@ -356,7 +337,6 @@ body {
            border-radius: 0 5px 5px 0;
            cursor: pointer;
            background-color: white;
-           
        }
        
        .iconobuscar {
@@ -384,7 +364,6 @@ body {
 
     .detalle {
         padding-left: 0px;
-
     }
 
     .titulo-pelicula  {
@@ -400,7 +379,6 @@ body {
     .descripcion-actores {
         display: flex;
         flex-direction: column;
-
     }
     
     .sinopsis p {
@@ -416,7 +394,6 @@ body {
     .reproducir {
         display: flex;
         align-items: center;
-
     }
     
     .reproducir a {
@@ -428,7 +405,6 @@ body {
         border-left: none;
         border-radius: 0px 10px 10px 0px;
         padding: 14px;
-        
     }
     
     .reproducir button{
@@ -447,20 +423,17 @@ body {
     .reproducir button img {
         width: 20px;
     }
-
   
        .footer {
         border-top: black 1px solid;
         margin-top: 30px;
         padding-top: 25px;
-        
     }
     
     .footer div {
         display: flex;
         justify-content: space-between;
         padding-left: 0px;
-        
     }
     
     .footer div ul {
@@ -471,7 +444,6 @@ body {
         justify-content: space-between;
         padding-right: 30px;
         padding-left: 30px;
-       
     }
     
     
@@ -486,7 +458,6 @@ body {
     
     .logochico {
         display: none;
-        
     }
     
    .divs-footer {

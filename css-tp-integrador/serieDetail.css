@@ -87,7 +87,6 @@ body {
     border: none;
     padding: 5px;
     border-radius: 5px 0px 0px 5px;
-    
 }
 
 .searchbutton {
@@ -106,7 +105,6 @@ body {
     padding: 3px;
 }
 
-
 .section-body{
     display: flex;
     justify-content: space-between;
@@ -114,15 +112,18 @@ body {
     padding-left: 20px;
     height: 450px;
 }
+
 .foto-detalle a img{
     width: 670px;
     height: 380px;
     object-fit: cover;
     border-radius: 5px 5px 5px 5px;
 }
+
 .detalle {
     padding-left: 30px;
 }
+
 .titulo-pelicula  {
     display: flex;
     justify-content: flex-start;
@@ -153,7 +154,6 @@ body {
     justify-content: space-between;
     margin-bottom: 20px;
     width: 270px;
-    
 }
 
 .temporadas {
@@ -162,18 +162,17 @@ body {
 }
 
 .temporadas a.texto {
-text-decoration: none;
-background-color: black;
-color: #f4f1bb;
-border-radius: 10px 0px 0px 10px;
-padding: 7px;
-font-family: 'Josefin Sans', sans-serif;
-height: 15px;
+    text-decoration: none;
+    background-color: black;
+    color: #f4f1bb;
+    border-radius: 10px 0px 0px 10px;
+    padding: 7px;
+    font-family: 'Josefin Sans', sans-serif;
+    height: 15px;
 }
 
 .temporadas img {
     width: 30px;
-    
 }
 
 .temporadas a.imagen {
@@ -190,13 +189,13 @@ height: 15px;
 }
 
 .capitulos a.texto {
-text-decoration: none;
-background-color: black;
-color: #f4f1bb;
-border-radius: 10px 0px 0px 10px;
-padding: 7px;
-font-family: 'Josefin Sans', sans-serif;
-height: 15px;
+    text-decoration: none;
+    background-color: black;
+    color: #f4f1bb;
+    border-radius: 10px 0px 0px 10px;
+    padding: 7px;
+    font-family: 'Josefin Sans', sans-serif;
+    height: 15px;
 }
 
 .capitulos img {
@@ -211,12 +210,10 @@ height: 15px;
     height: 20px;
 }
 
-
 .reproducir {
     display: flex;
     align-items: center;
     padding-top: 25px;
-    
 }
 
 .reproducir a {
@@ -228,7 +225,6 @@ height: 15px;
     border: 1px solid black;
     border-left: none;
     border-radius: 0px 10px 10px 0px;
-    
 }
 
 .reproducir button{
@@ -243,11 +239,10 @@ height: 15px;
     padding-bottom: 10px;
     padding-left: 10px;
 }
-.reproducir button img {
-    width: 20px;
-    
-}
 
+.reproducir button img {
+    width: 20px; 
+}
 
 .footer {
     border-top: black 1px solid;
@@ -267,7 +262,6 @@ height: 15px;
     justify-content: space-between;
    
 }
-
 
 .footer ul li a {
     text-decoration: none;
@@ -291,9 +285,7 @@ height: 15px;
     font-family: 'Josefin Sans', sans-serif;
 }
 
-
 @media only screen and (max-width: 420px) {
-
 
     body {
         background-color: #f4f1bb;
@@ -313,7 +305,6 @@ height: 15px;
            align-items: flex-end;
            justify-content: space-between;
            padding-right: 0px;
-           
        }
        
        .textosheader img {
@@ -334,18 +325,15 @@ height: 15px;
        .header1 {
            border-bottom: black 1px solid;
            padding-top: 20px;
-           padding-bottom: 10px;
-           
+           padding-bottom: 10px;  
        }
-       
-             
+            
        .header1 ul  {
            display: flex;
            justify-content: space-around;
            align-items: center;
            list-style: none;
-           padding-left: 0px;
-           
+           padding-left: 0px;   
        }
        
        .enreellogo {
@@ -358,17 +346,13 @@ height: 15px;
            color: black;
        }
        
-       
-       .header2 {
-           
+       .header2 { 
            display: flex;
-          
            padding-left: 0px;
            justify-content: space-between;
            padding-right: 20px;
            padding-bottom: 20px;
            padding-top: 20px;
-
        }
     
        .header2 ul {
@@ -386,15 +370,12 @@ height: 15px;
            border-radius: 10px 10px 10px 10px;
            padding: 3px;
            background-color: black;
-       
        }
-       
        
        .searchbar {
            display: flex;
            justify-content: space-around;
-           align-items: center;
-           
+           align-items: center;  
        }
        
        .search {
@@ -420,7 +401,6 @@ height: 15px;
            border-radius: 0 5px 5px 0;
            cursor: pointer;
            background-color: white;
-           
        }
        
        .iconobuscar {
@@ -429,7 +409,6 @@ height: 15px;
            align-items: center;
            padding: 2px;
        } 
-
 
        .section-body{
         display: flex;
@@ -450,19 +429,16 @@ height: 15px;
 
     .detalle {
         padding-left: 30px;
-        
     }
 
     .titulo-pelicula  {
         display: flex;
         justify-content: flex-start;
         padding-bottom: 0px;
-        
     }
     
     .titulo-pelicula h2 {
         font-family: 'Josefin Sans', sans-serif;
-        
     }
     
     .descripcion-actores {
@@ -473,7 +449,6 @@ height: 15px;
     .sinopsis p {
         font-family: 'Josefin Sans', sans-serif;
         padding-right: 40px;
-        
     }
     
     .rating img {
@@ -486,7 +461,6 @@ height: 15px;
         justify-content: space-between;
         margin-bottom: 20px;
         width: 270px;
-        
     }
     
     .temporadas {
@@ -506,7 +480,6 @@ height: 15px;
     
     .temporadas img {
         width: 30px;
-        
     }
     
     .temporadas a.imagen {
@@ -544,12 +517,10 @@ height: 15px;
         height: 20px;
     }
     
-    
     .reproducir {
         display: flex;
         align-items: center;
         padding-top: 15px;
-        
     }
     
     .reproducir a {
@@ -561,7 +532,6 @@ height: 15px;
         border: 1px solid black;
         border-left: none;
         border-radius: 0px 10px 10px 0px;
-        
     }
     
     .reproducir button{
@@ -576,9 +546,9 @@ height: 15px;
         padding-bottom: 10px;
         padding-left: 10px;
     }
+
     .reproducir button img {
-        width: 20px;
-        
+        width: 20px; 
     }
        
      .footer {
@@ -586,14 +556,12 @@ height: 15px;
         margin-top: 30px;
         padding-top: 25px;
         overflow: hidden;
-        
     }
     
     .footer div {
         display: flex;
         justify-content: space-between;
         padding-left: 0px;
-        
     }
     
     .footer div ul {
@@ -604,7 +572,6 @@ height: 15px;
         justify-content: space-between;
         padding-right: 30px;
         padding-left: 30px;
-       
     }
     
     
@@ -618,8 +585,7 @@ height: 15px;
     }
     
     .logochico {
-        display: none;
-        
+        display: none; 
     }
     
    .divs-footer {
