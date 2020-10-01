@@ -35,9 +35,6 @@ body {
     border-bottom: black 1px solid;
 }
 
-.header2 {
-    border-bottom: solid 1px black;
-}
 
 .header1 ul  {
     display: flex;
@@ -59,9 +56,10 @@ body {
     display: flex;
     padding-left: 90px;
     justify-content: space-between;
-    padding-right: 640px;
+    padding-right: 500px;
     padding-top: 10px;
     padding-bottom: 10px;
+    border-bottom: solid 1px black;
 }
 
 

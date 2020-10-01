@@ -52,7 +52,7 @@ body {
     display: flex;
     padding-left: 90px;
     justify-content: space-between;
-    padding-right: 640px;
+    padding-right: 500px;
     padding-top: 10px;
     padding-bottom: 10px;
 }
@@ -134,13 +134,76 @@ body {
     align-items: center;
 }
 
-.genero {
-    border: black 1px solid;
+.genero a.accion{
+    border-radius: 10px 10px 10px 10px;
+    font-family: 'Josefin Sans', sans-serif;
+    background-image: url(../imagenes-tp-integrador/peliculas-accion.jpeg);
+    background-size: 135%;
+    padding: 20px;
+    width: 200px;
+    height: 130px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    
 }
 
-.genero a img {
-    width: 300px;
+.genero a.terror{
+    border-radius: 10px 10px 10px 10px;
+    font-family: 'Josefin Sans', sans-serif;
+    background-image: url(../imagenes-tp-integrador/peliculas-terror.jpg);
+    background-size: 135%;
+    padding: 20px;
+    width: 200px;
+    height: 130px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    
 }
+
+.genero a.comedia{
+    border-radius: 10px 10px 10px 10px;
+    font-family: 'Josefin Sans', sans-serif;
+    background-image: url(../imagenes-tp-integrador/peliculas-comedia.jpg);
+    background-size: 135%;
+    padding: 20px;
+    width: 200px;
+    height: 130px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    
+}
+
+.genero a.suspenso{
+    border-radius: 10px 10px 10px 10px;
+    font-family: 'Josefin Sans', sans-serif;
+    background-image: url(../imagenes-tp-integrador/peliculas-suspenso.jpg);
+    background-size: 170%;
+    padding: 20px;
+    width: 200px;
+    height: 130px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    
+}
+
+.genero a {
+    text-decoration: none;
+    color: #f4f1bb;
+}
+
+.genero a p {
+    border-radius: 10px 10px 10px 10px;
+    background-color: black;
+    padding: 10px;
+    
+    
+}
+
+
 
 .flecha {
     
@@ -163,7 +226,7 @@ body {
 .footer div {
     display: flex;
     justify-content: space-between;
-    padding-left: 0px;
+    padding-left: 20px;
     
 }
 

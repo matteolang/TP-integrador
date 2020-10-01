@@ -51,7 +51,7 @@ body {
     display: flex;
     padding-left: 90px;
     justify-content: space-between;
-    padding-right: 640px;
+    padding-right: 500px;
     padding-top: 10px;
     padding-bottom: 10px;
 }
@@ -317,7 +317,7 @@ body {
         margin-left: 100px;
         justify-content: space-between;
         padding-right: 0px;
-        padding-left: 60px;
+        padding-left: 70px;
 
     }
 
@@ -382,7 +382,7 @@ body {
     }
     .foto-detalle a img{
         width: 330px;
-        height: 165px;
+        height: 180px;
         border-radius: 5px 5px 5px 5px;
         margin-left: 0px;
     }
@@ -449,7 +449,7 @@ body {
         border-right: none;
         border-radius: 10px 0px 0px 10px;
         padding-top: 9px;
-        padding-bottom: 9px;
+        padding-bottom: 10px;
         padding-left: 9px;
     }
 
