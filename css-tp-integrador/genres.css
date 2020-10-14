@@ -305,20 +305,21 @@ body {
     
        .header2 ul {
         width: 200px;
-        margin-left: 100px;
+        margin-left: 80px;
         justify-content: space-between;
         padding-right: 0px;
         padding-left: 70px;
     }
-
-       .header2 ul li a {
-           text-decoration: none;
-           color: #f4f1bb;
-           border: 1px solid  black;
-           border-radius: 10px 10px 10px 10px;
-           padding: 3px;
-           background-color: black;
-       }
+    
+    .header2 ul li a {
+        text-decoration: none;
+        color: #f4f1bb;
+        border: 1px solid  black;
+        border-radius: 10px 10px 10px 10px;
+        padding: 5px;
+        background-color: black;
+        font-size: 12px;
+    }
        
        .searchbar {
            display: flex;
@@ -415,24 +416,25 @@ body {
             padding-left: 0px;
         }
     
-    .footer div ul {
-        display: flex;
-        width: 100px;
-        list-style: none;
-        align-items: center;
-        justify-content: space-between;
-        padding-right: 30px;
-        padding-left: 30px;
-    }
-    
-    .footer ul li a {
-        text-decoration: none;
-        color: #f4f1bb;
-        border-radius: 10px 10px 10px 10px;
-        border: 1px solid black;
-        padding: 3px;
-        background-color: black;
-    }
+        .footer div ul {
+            display: flex;
+            width: 105px;
+            list-style: none;
+            align-items: center;
+            justify-content: space-between;
+            padding-right: 20px;
+            padding-left: 40px;  
+        }
+        
+        .footer ul li a {
+            text-decoration: none;
+            color: #f4f1bb;
+            border-radius: 10px 10px 10px 10px;
+            border: 1px solid black;
+            padding: 5px;
+            background-color: black;
+            font-size: 12px;
+        }
     
     .logochico {
         display: none; 
