@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title class="textosheader">Enreel</title>
+    <link rel="stylesheet" href="css-tp-integrador/uikit.min.css" />
+    <script src="js/uikit.min.js"></script>
+    <script src="js/uikit-icons.min.js"></script>
     <link rel="stylesheet" href="css-tp-integrador/Index.css">
     <link rel="icon" type="png" href="imagenes-tp-integrador/Logo-enreel.png">
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&display=swap" rel="stylesheet">
@@ -12,7 +15,7 @@
 
 <body>
 
-    
+
     
 <Header>
     <section class="header1">
@@ -44,6 +47,24 @@
     </section>
 </Header>
 
+<div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slideshow="ratio: 7:3; animation: push">
+
+    <ul class="uk-slideshow-items">
+        <li>
+            <img src="imagenes-tp-integrador/narcos.jpg" alt="" uk-cover>
+        </li>
+        <li>
+            <img src="imagenes-tp-integrador/the-paramedic.jpg" alt="" uk-cover>
+        </li>
+        <li>
+            <img src="imagenes-tp-integrador/miracle-in-cell-7.jpg" alt="" uk-cover>
+        </li>
+    </ul>
+
+    <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slideshow-item="previous"></a>
+    <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slideshow-item="next"></a>
+
+</div>
 
 <section class="section-body">
    <article>
@@ -143,36 +164,35 @@
 
 
 <footer class="footer">
-<div>
+
 
     <div class="divs-footer">
         <img src="imagenes-tp-integrador/Logo-enreel.png" alt="Logo-enreel" class="logochico">
     </div>
 
-    <div class="searchbar">
-        <div class="search">
-           <input type="text" class="searchterm" placeholder="Buscar...">
-           <button type="submit" class="searchbutton"><img class="iconobuscar" src="imagenes-tp-integrador/iconobuscar-removebg-preview.png" alt="icono de buscar"></button>
-        </div>
-        <div>
-            <ul>
-                <li  class="textosheader"><a href="Index.html">Home</a></li>
-                <li  class="textosheader"><a href="genres.html">Generos</a></li>
-            </ul>
-        </div>
-     </div>
+    <!--REDES SOCIALES FOOTER VERSION DESKTOP-->
 
+    <div class="redes-sociales">
+        <ul>
+            <li class="li-red-social">
+                <img class="logoredsocial-tw" src="imagenes-tp-integrador/tw.png" alt="logo twitter">
+                <p>@enreel</p>
+            </li>
+            <li class="li-red-social">
+                <img class="logoredsocial" src="imagenes-tp-integrador/insta-logo-removebg.png" alt="logo instagram">
+                <p>@enreel</p>
+            </li>
+        </ul>
+    </div>
     
 
     <div class="divs-footer">
-        <p class="nombresfooter">Matteo Lang, Tomas Falaq, Francisco Taylor</p>
+        <p class="nombresfooter">Matteo Lang, Francisco Taylor</p>
     </div>
-</div>
+
 
 
 
 </footer>
 
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
 </body>
