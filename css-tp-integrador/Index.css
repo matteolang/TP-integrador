@@ -208,6 +208,31 @@ h3 {
     color: black;
 }
 
+#div-populares {
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+#div-populares div.uk-slider-container {
+    padding-right: 3.5%;
+}
+
+#flechaslidenav svg {
+    color: black !important;
+}
+
+#flechaslidenav-dos svg {
+    color: black !important;
+}
+
+.casapapel {
+    margin-left: 0.5%;
+    margin-right: 0.5%;
+}
+
+.casapapel a img{
+    border-radius: 10px 10px 10px 10px;
+}
 
 /*REDES SOCIALES FOOTER VERSION DESKTOP*/
 
@@ -383,6 +408,11 @@ h3 {
            align-items: center;   
        }
        
+.uk-dotnav li a{
+    width: 5px;
+    height: 5px;
+}
+
        .caja {
            margin-top: 15px;
            margin-bottom: 15px;

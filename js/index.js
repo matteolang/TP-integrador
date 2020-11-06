@@ -21,9 +21,9 @@ fetch(`https://api.themoviedb.org/3/movie/popular?api_key=c5fa76b40f5a5ea03c6014
 
             imagenescontenedor.innerHTML += 
             `
-            <li>
+            <li class="casapapel">
             <a href="movieDetail.html">
-            <img id="casapapel" src="${linkimagen}${results.poster_path}" alt="">
+            <img src="${linkimagen}${results.poster_path}" alt="">
             </a>
             </li>
              `
