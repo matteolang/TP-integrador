@@ -236,6 +236,7 @@ h3 {
 
 .casapapel a img{
     border-radius: 10px 10px 10px 10px;
+    height: 468.98px;
 }
 
 /*REDES SOCIALES FOOTER VERSION DESKTOP*/
@@ -264,6 +265,10 @@ h3 {
     color: black !important;
 }
 
+#carousel-imagenes {
+    height: auto !important;
+    width: 100% !important;
+}
 
 @media only screen and (max-width: 420px) {
 
@@ -516,4 +521,7 @@ h3 {
         margin-right: 5px;
     }
 
+    .casapapel a img {
+        height: 244.27px;
+    }
 }
