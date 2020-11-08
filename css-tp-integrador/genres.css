@@ -197,41 +197,43 @@ body {
     border-top: black 1px solid;
 }
 
-.footer div {
-    display: flex;
-    justify-content: space-between;
-    padding-left: 20px;
+/*footer redes sociales y logo tmdb desktop*/
+
+.redes-sociales ul {
+    width: 380px !important;
+    padding: 0px;
 }
 
-.footer div ul {
-    display: flex;
-    width: 150px;
-    list-style: none;
-    align-items: center;
-    justify-content: space-between;
+.logoredsocial {
+    width: 100px;
 }
 
-.footer ul li a {
-    text-decoration: none;
-    color: #f4f1bb;
-    background-color: black;
-    border-radius: 10px 10px 10px 10px;
-    padding: 6px;
+.logoredsocial-tw {
+    width: 65px;
+    margin-right: 15px;
 }
 
-.logochico {
-    width: 150px;
-}
-
-.divs-footer {
+.li-red-social {
     display: flex;
     align-items: center;
-    padding-right: 20px;
 }
 
-.nombresfooter{
-    font-family: 'Josefin Sans', sans-serif;
+.li-red-social p {
+    font-family:'Josefin Sans', sans-serif;
+    color: black !important;
 }
+
+#carousel-imagenes {
+    height: auto !important;
+    width: 100% !important;
+}
+
+.logochico{
+    width: 65px;
+    margin-left: 40px;
+    padding-top: 40px;
+}
+
 
 @media only screen and (max-width: 420px) {
 
