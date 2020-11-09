@@ -227,8 +227,9 @@ body {
 }
 
 .nombresfooter {
-    font-family:'Josefin Sans', sans-serif;
+    font-family:'Josefin Sans', sans-serif !important;
     color: black !important;
+    font-size: 16px !important;
 }
 
 /*footer redes sociales y logo tmdb desktop*/
@@ -266,7 +267,6 @@ body {
     width: 65px;
     margin-left: 40px;
 }
-
 
 
 @media only screen and (max-width: 420px) {
@@ -445,14 +445,16 @@ body {
             margin-top: 30px;
             padding-top: 25px;
         }
-    
-        .footer div {
+
+        /*REDES SOCIALES Y LOGO TMDB VERSION MOBILE*/
+
+        .footer {
             display: flex;
             justify-content: space-between;
-            padding-left: 0px;
+            padding-left: 0px ;   
         }
-    
-        .footer div ul {
+        
+        .footer ul {
             display: flex;
             width: 105px;
             list-style: none;
@@ -471,21 +473,66 @@ body {
             background-color: black;
             font-size: 12px;
         }
-    
-    .logochico {
-        display: none; 
-    }
-    
-   .divs-footer {
-       padding-right: 0px;
-   }
-
-    .nombresfooter {
-     font-family:'Josefin Sans', sans-serif;
-     font-size: 8px;
- }
-
- .footer div.searchbar {
-     padding-left: 0px;
- }
+        
+        .logochico {
+            display: none;    
+        }
+        
+        .divs-footer {
+           padding-right: 0px;
+        }
+ 
+        .nombresfooter {
+            font-family:'Josefin Sans', sans-serif;
+            font-size: 12px;
+        }
+ 
+        .footer div.searchbar {
+            padding-left: 0px;
+        }
+ 
+        .redes-sociales ul {
+            width: 225px !important;
+            padding: 0px !important;
+            padding-right: 50px !important;
+        }
+     
+        .redes-sociales ul p {
+            margin: 0px !important;
+        }
+ 
+        .logoredsocial {
+            width: 50px;
+        }
+     
+        .logoredsocial-tw {
+            width: 32px;
+            margin-right: 5px;
+        }
+ 
+        .casapapel a img {
+            height: 244.27px;
+        }
 }
+        .footer div {
+            display: flex;
+            justify-content: space-between;
+            padding-left: 0px;
+        }
+    
+        .footer div ul {
+            display: flex;
+            width: 105px;
+            list-style: none;
+            align-items: center;
+            justify-content: space-between;
+            padding-right: 20px;
+            padding-left: 40px;  
+        }
+        
+        .nombresfooter {
+            font-family:'Josefin Sans', sans-serif;
+            font-size: 8px;
+        }
+
+ 

@@ -106,24 +106,21 @@ body {
 }
 
 .section-body {
-    padding-bottom: 35px;
-    
+    padding-bottom: 35px; 
 }
 
 #carousel {
     padding-left: 20px;
     padding-right: 20px;
     padding-top: 50px;
-    
-    
 }
 
 .titulos-colecciones {
-display: flex;
-justify-content: space-around;
-font-family: 'Josefin Sans', sans-serif !important;
-color: black !important;
-margin-top: 100px !important;
+    display: flex;
+    justify-content: space-around;
+    font-family: 'Josefin Sans', sans-serif !important;
+    color: black !important;
+    margin-top: 100px !important;
 }
 
 .container1 {
