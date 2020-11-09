@@ -8,6 +8,7 @@ body {
     font-family: 'Josefin Sans', sans-serif;;
    font-size: 50px;
    padding-right: 70px;
+   color: black !important;
 }
 
 .textosheader {
@@ -24,6 +25,11 @@ body {
 
 .homegeneros {
     font-family: 'Josefin Sans', sans-serif;
+}
+
+h3{
+    font-family: 'Josefin Sans', sans-serif;
+    color: black !important;
 }
 
 .header1 {
@@ -229,7 +235,6 @@ body {
 .nombresfooter {
     font-family:'Josefin Sans', sans-serif !important;
     color: black !important;
-    font-size: 16px !important;
 }
 
 /*footer redes sociales y logo tmdb desktop*/
@@ -532,7 +537,7 @@ body {
         
         .nombresfooter {
             font-family:'Josefin Sans', sans-serif;
-            font-size: 8px !important;
+            font-size: 8px;
         }
 
  
