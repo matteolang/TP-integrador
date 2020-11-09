@@ -197,6 +197,40 @@ body {
     border-top: black 1px solid;
 }
 
+.footer {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 20px;
+}
+
+.footer ul {
+    display: flex;
+    width: 150px;
+    list-style: none;
+    align-items: center;
+    justify-content: space-between;
+   
+}
+
+.footer ul li a {
+     text-decoration: none;
+    color: #f4f1bb;
+    background-color: black;
+    border-radius: 10px 10px 10px 10px;
+    padding: 6px;
+}
+
+.divs-footer {
+    display: flex;
+    align-items: center;
+    padding-right: 20px;
+}
+
+.nombresfooter {
+    font-family:'Josefin Sans', sans-serif;
+    color: black !important;
+}
+
 /*footer redes sociales y logo tmdb desktop*/
 
 .redes-sociales ul {
@@ -231,8 +265,8 @@ body {
 .logochico{
     width: 65px;
     margin-left: 40px;
-    padding-top: 40px;
 }
+
 
 
 @media only screen and (max-width: 420px) {
