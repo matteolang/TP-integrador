@@ -518,7 +518,7 @@ h3{
         .casapapel a img {
             height: 244.27px;
         }
-}
+
         .footer div {
             display: flex;
             justify-content: space-between;
@@ -537,7 +537,9 @@ h3{
         
         .nombresfooter {
             font-family:'Josefin Sans', sans-serif;
-            font-size: 8px;
+            font-size: 12px;
         }
+}
+        
 
  
