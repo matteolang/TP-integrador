@@ -17,7 +17,12 @@ fetch(`https://api.themoviedb.org/3/genre/movie/list?api_key=c5fa76b40f5a5ea03c6
             
             
             contenedorGeneros.innerHTML += 
-            `<li class="ligeneros"><a href=""><p>${results.name}</p></a><div class="uk-position-center uk-panel"></div></li>`
+            `<li>
+            <a href="">
+            <img src="" alt="">
+            <div class="uk-position-center uk-panel"><h1 id="nombres-generos">${results.name}</h1></div>
+            </a>
+        </li>`
 
             
         

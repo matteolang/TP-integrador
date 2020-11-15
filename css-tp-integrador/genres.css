@@ -289,6 +289,37 @@ p {
     color: black !important;
 }
 
+.uk-slider {
+    width: 80%;
+    margin-top: 50px;
+}
+
+#nombres-generos {
+    font-size: 26px;
+    color:  #f4f1bb !important;
+    font-family: 'Josefin Sans', sans-serif !important;
+    background-color: black !important;
+    padding: 20px;
+    border-radius: 10px 10px 10px 10px;
+    width: 210px;
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.uk-dotnav {
+    display: none;
+}
+
+.uk-active {
+    height: 100px;
+    
+}
+
+.uk-active a {
+    width: 210px;
+}
+
 @media only screen and (max-width: 420px) {
 
 
@@ -427,8 +458,8 @@ p {
        .caja-generos {
            flex-direction: column;
            justify-content: space-between;
-           height: 900px;
-            margin-top: 50px;
+           height: 1000px;
+            margin-top: 10px;
        }
        
        .genero a.terror {
@@ -555,9 +586,41 @@ p {
             font-size: 12px;
         }
 
-        
+        #container-generos {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            height: 1000px;
+            
+        }
 
+        #nombres-generos {
+            font-size: 15px;
+            width: 143px !important;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .uk-active {
+            width: 100%;
+            
+        }
        
+        .uk-active a {
+            width: 145px !important;
+            display: flex;
+            justify-content: space-around;
+        }
+    
+        .uk-position-center {
+            width: 145px !important;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        svg {
+            display: none !important;
+        }
+    
     }
         
 
