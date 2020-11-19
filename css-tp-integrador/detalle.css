@@ -1,0 +1,583 @@
+body {
+    background-color: #f4f1bb;
+}
+
+.enreeltitulo {
+    font-family: 'Josefin Sans', sans-serif;;
+   font-size: 50px;
+   padding-right: 70px;
+}
+
+.textosheader {
+    width: 150px;
+    font-family:'Josefin Sans', sans-serif;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+}
+
+.textosheader img {
+    width: 25px;
+}
+
+.homegeneros {
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.header1 {
+    border-bottom: black 1px solid;
+}
+
+.header2 {
+    border-bottom: solid 1px black;
+}
+
+.header1 ul  {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    padding-left: 0px;
+    padding-right: 20px;
+}
+
+.header1 ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+.header2 {
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: solid 1px black;
+}
+
+.header2 ul{
+    display: flex;
+    list-style: none;
+    width: 200px;
+    justify-content: space-around;
+    }
+
+.header2 ul li a {
+    text-decoration: none;
+    color: #f4f1bb;
+    background-color: black;
+    border-radius: 10px 10px 10px 10px;
+    padding: 6px;
+}
+
+.searchbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.search {
+    display: flex;
+    width: 100%;
+}
+
+.searchterm {
+    border:none;
+    padding: 5px;
+    border-radius: 5px 0px 0px 5px;  
+}
+
+.searchbutton {
+    width: 40px;
+    border: none;
+    border-left: 1px solid grey;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    background-color: white;
+}
+
+.iconobuscar {
+    width: 20px;
+    display: flex;
+    align-items: center;
+    padding: 3px;
+}
+
+.section-body{
+    display: flex;
+    justify-content: space-between;
+    padding-top:  50px;
+    padding-left: 20px;
+    height: 450px;
+}
+
+.foto-detalle img{
+    width: auto;
+    height: 100%;
+    border-radius: 10px 10px 10px 10px;
+   
+}
+
+#sectionDetalle {
+    display: flex;
+    margin: 50px;
+    justify-content: space-between;
+}
+
+
+
+.titulo h2 {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 80px;
+    margin-top: 0px !important;
+
+}
+
+.section-sinopsis {
+    padding-left: 30px;
+}
+
+
+.detalle { 
+    padding-left: 30px;
+}
+
+.titulo-pelicula  {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding-bottom: 0px;
+}
+
+.titulo-pelicula h2 {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 60px;
+}
+
+.descripcion-actores {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.sinopsis p {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 20px;
+    margin-bottom: 50px;
+}
+
+#promediovotos {
+    justify-content: flex-start !important;
+    margin-bottom: 50px;
+    font-size: 20px;
+}
+
+.nombregenero {
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 50px;
+    align-items: center;
+}
+
+.nombregenero p {
+    font-size: 20px;
+}
+
+.nombregenero a {
+    font-family: 'Josefin Sans', sans-serif;
+    margin-left: 5px;
+    text-decoration: none;
+    color: #f4f1bb;
+    background-color: black;
+    padding: 5px;
+    border-radius: 10px 10px 10px 10px;
+    font-size: 20px;
+}
+
+.fechasalida {
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 50px;
+    
+}
+
+.fechasalida p {
+    font-size: 20px;
+}
+
+.reviewautor {
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 20px;
+}
+
+.reviewautor p {
+font-size: 20px;
+}
+
+.tituloreviews {
+    display: flex;
+    justify-content: center;
+}
+
+.tituloreviews h2 {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 50px;
+}
+
+#reviews {
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-bottom: 30px;
+}
+
+.rating img {
+    width: 100px;
+    margin-bottom: 20px;   
+}
+
+.reproducir {
+    display: flex;
+    align-items: center;
+}
+
+.reproducir a {
+    text-decoration: none;
+    color:  #f4f1bb;
+    background-color: black;
+    font-family: 'Josefin Sans', sans-serif;
+    padding: 14px;
+    border: 1px solid black;
+    border-left: none;
+    border-radius: 0px 10px 10px 0px;
+}
+
+.reproducir button{
+    cursor: pointer;
+    width: 50px;
+    background-color: transparent;
+    border: black 2px solid;
+    border-right: none;
+    border-radius: 10px 0px 0px 10px;
+    padding-top: 9px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+}
+
+.reproducir button img {
+    width: 20px;
+}
+
+.footer {
+    border-top: black 1px solid;
+}
+
+.footer div {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 20px;
+}
+
+.footer div ul {
+    display: flex;
+    width: 150px;
+    list-style: none;
+    align-items: center;
+    justify-content: space-between
+}
+
+.footer ul li a {
+    text-decoration: none;
+    color: #f4f1bb;
+    background-color: black;
+    border-radius: 10px 10px 10px 10px;
+    padding: 6px;
+}
+
+.logochico {
+    width: 65px !important;
+}
+
+.divs-footer {
+    display: flex;
+    align-items: center;
+    padding-right: 20px;
+}
+
+.nombresfooter{
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+@media only screen and (max-width: 420px) {
+
+
+    body {
+        background-color: #f4f1bb;
+          width: 100%;  
+       }
+       
+       .enreeltitulo {
+           font-family: 'Josefin Sans', sans-serif;;
+          font-size: 25px;
+          padding-right: 10px;
+       }
+       
+       .textosheader {
+           width: 75px;
+           font-family:'Josefin Sans', sans-serif;
+           display: flex;
+           align-items: flex-end;
+           justify-content: space-between;
+           padding-right: 0px;
+       }
+       
+       .textosheader img {
+           width: 10px;
+       }
+
+       .textosheader a {
+           font-size: 10px;
+           white-space: nowrap;
+       }
+
+       .homegeneros {
+           font-family: 'Josefin Sans', sans-serif;
+           font-size: 10px;
+       }
+       
+       .header1 {
+           border-bottom: black 1px solid;
+           padding-top: 20px;
+           padding-bottom: 10px;  
+       }
+       
+       .header1 ul  {
+           display: flex;
+           justify-content: space-around;
+           align-items: center;
+           list-style: none;
+           padding-left: 0px;
+       }
+       
+       .enreellogo {
+           width: 70px;
+           margin-right: 30px;
+       }
+
+       .header1 ul li a {
+           text-decoration: none;
+           color: black;
+       }
+       
+       .header2 {
+           display: flex;
+           padding-left: 0px;
+           justify-content: space-between;
+           padding-right: 20px;
+           padding-bottom: 20px;
+           padding-top: 20px;
+       }
+    
+       .header2 ul {
+        width: 200px;
+        margin-left: 80px;
+        justify-content: space-between;
+        padding-right: 0px;
+        padding-left: 70px;
+    }
+    
+    .header2 ul li a {
+        text-decoration: none;
+        color: #f4f1bb;
+        border: 1px solid  black;
+        border-radius: 10px 10px 10px 10px;
+        padding: 5px;
+        background-color: black;
+        font-size: 12px;
+    }
+       
+       .searchbar {
+           display: flex;
+           justify-content: space-around;
+           align-items: center;
+       }
+       
+       .search {
+           display: flex;
+           width: 100%;
+       }
+       
+       .searchterm {
+           border: none;
+           padding: 5px;
+           border-radius: 5px 0px 0px 5px;
+           width: 60px;
+           height: 8px;
+           font-size: 10px;
+       }
+       
+       .searchbutton {
+           width: 30px;
+           height: 18px;
+           border: none;
+           border-left: 1px solid grey;
+           border-radius: 0 5px 5px 0;
+           cursor: pointer;
+           background-color: white;
+       }
+       
+       .iconobuscar {
+           width: 13px;
+           display: flex;
+           align-items: center;
+           padding: 2px;
+       } 
+
+       .section-body{
+        display: flex;
+        justify-content: space-between;
+        padding-top:  50px;
+        padding-left: 20px;
+        height: 450px;
+        flex-direction: column;
+        margin-bottom: 150px;
+    }
+    .foto-detalle a img{
+        width: 330px;
+        height: 190px;
+        border-radius: 5px 5px 5px 5px;
+        margin-left: 0px;
+    }
+
+    .detalle {
+        padding-left: 0px;
+    }
+
+    .titulo-pelicula  {
+        display: flex;
+        justify-content: flex-start;
+        padding-bottom: 0px;
+    }
+    
+    .titulo-pelicula h2 {
+        font-family: 'Josefin Sans', sans-serif;
+    }
+    
+    .descripcion-actores {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .sinopsis p {
+        font-family: 'Josefin Sans', sans-serif;
+        padding-right: 40px;
+    }
+    
+    .rating img {
+        width: 100px;
+        margin-bottom: 20px;
+    }
+    
+    .reproducir {
+        display: flex;
+        align-items: center;
+    }
+    
+    .reproducir a {
+        text-decoration: none;
+        color:  #f4f1bb;
+        background-color: black;
+        font-family: 'Josefin Sans', sans-serif;
+        border: 1px solid black;
+        border-left: none;
+        border-radius: 0px 10px 10px 0px;
+        padding: 14px;
+    }
+    
+    .reproducir button{
+        cursor: pointer;
+        width: 50px;
+        background-color: transparent;
+        border: black 2px solid;
+        border-right: none;
+        border-radius: 10px 0px 0px 10px;
+        padding-top: 9px;
+        padding-bottom: 10px;
+        padding-left: 9px;
+    }
+
+    .reproducir button img {
+        width: 20px;
+    }
+  
+       .footer {
+        border-top: black 1px solid;
+        margin-top: 30px;
+        padding-top: 25px;
+    }
+    
+    .footer div {
+        display: flex;
+        justify-content: space-between;
+        padding-left: 0px;
+    }
+    
+    .footer div ul {
+        display: flex;
+        width: 105px;
+        list-style: none;
+        align-items: center;
+        justify-content: space-between;
+        padding-right: 20px;
+        padding-left: 40px;  
+    }
+    
+    .footer ul li a {
+        text-decoration: none;
+        color: #f4f1bb;
+        border-radius: 10px 10px 10px 10px;
+        border: 1px solid black;
+        padding: 5px;
+        background-color: black;
+        font-size: 12px;
+    }
+    
+    .logochico {
+        display: none;
+    }
+    
+   .divs-footer {
+       padding-right: 0px;
+   }
+
+    .nombresfooter {
+     font-family:'Josefin Sans', sans-serif;
+     font-size: 8px;
+ }
+
+ .footer div.searchbar {
+     padding-left: 0px;
+ }
+
+ #sectionDetalle {
+     flex-direction: column;
+ }
+
+ .foto-detalle img{
+     width: 100%;
+     height: auto;
+     margin-bottom: 20px;
+ }
+
+ .titulo h2{
+     font-size: 30px;
+ }
+
+ #reviews {
+     margin-right: 10px;
+     margin-left: 10px;
+ }
+
+ .tituloreviews h2 {
+     font-size: 25px;
+ }
+}
