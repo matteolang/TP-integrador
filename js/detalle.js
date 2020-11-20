@@ -13,6 +13,7 @@ var sectionReviews = document.querySelector(`#reviews`)
     var queryStringObj = new URLSearchParams (queryString)
     var queryStringObjId = queryStringObj.get(`id`)
     var stringTipo = queryStringObj.get(`tipo`)
+    var generoTipo = queryStringObj.get(`tipodegenero`)
     console.log(queryStringObj.get(`id`))
 
  
@@ -126,6 +127,94 @@ var sectionReviews = document.querySelector(`#reviews`)
         console.log(`El error fue: ${error}`);
     })
         
+    } 
+    else if (stringTipo == "genero"){
+
+
+
+        if (generoTipo == "pelicula"){
+        fetch(`https://api.themoviedb.org/3/discover/movie?api_key=c5fa76b40f5a5ea03c60140eade37d35&language=en-US&sort_by=popularity.desc&include_adult=false&include_video=false&page=1&with_genres=${queryStringObjId}`)
+        .then(function(response){
+        return response.json();
+        })
+        .then(function(data){
+            console.log(data);
+    
+            sectionDetalle.innerHTML += 
+            ``
+    
+    
+            })
+    
+        .catch(function(error){
+            console.log(`El error fue: ${error}`);
+        })
+    }
+    else if (generoTipo == "serie"){
+
+
+        sectionDetalle.innerHTML += 
+        `<div uk-slider>
+
+        <div class="uk-position-relative">
+    
+            <div class="uk-slider-container uk-light">
+                <ul id="container-generos" class="uk-slider-items uk-child-width-1-2 uk-child-width-1-3@s uk-child-width-1-4@m">
+                
+                </ul>
+            </div>
+    
+            <div class="uk-hidden@s uk-light">
+                <a class="uk-position-center-left uk-position-small" href="#"  uk-slidenav-previous uk-slider-item="previous"></a>
+                <a class="uk-position-center-right uk-position-small" href="#" uk-slidenav-next uk-slider-item="next"></a>
+            </div>
+    
+            <div class="uk-visible@s">
+                <a class="uk-position-center-left-out uk-position-small" href="#" id="flechaslidenav" uk-slidenav-previous uk-slider-item="previous"></a>
+                <a class="uk-position-center-right-out uk-position-small" href="#" id="flechaslidenav-dos" uk-slidenav-next uk-slider-item="next"></a>
+            </div>
+    
+        </div>
+    
+        <ul class="uk-slider-nav uk-dotnav uk-flex-center uk-margin"></ul>
+    
+    </div>
+                `
+            
+        var containerGeneros = document.querySelector(`#container-generos`)
+        
+
+        fetch(`https://api.themoviedb.org/3/discover/tv?api_key=c5fa76b40f5a5ea03c60140eade37d35&language=en-US&sort_by=popularity.desc&include_adult=false&include_video=false&page=1&with_genres=${queryStringObjId}`)
+        .then(function(response){
+        return response.json();
+        })
+        .then(function(data){
+            console.log(data);
+
+            for (let index = 0; index < data.results.length; index++) {
+                var resultados = data.results[index];
+                
+            }
+    
+            containerGeneros.innerHTML += 
+            `
+            <li>
+            <a href="">
+            <img src="${linkimagen}${resultados.poster_path}" alt="">
+            </a>
+            </li>
+             `
+           
+
+                
+    
+    
+            })
+    
+        .catch(function(error){
+            console.log(`El error fue: ${error}`);
+        })
+    }
     }
 
 

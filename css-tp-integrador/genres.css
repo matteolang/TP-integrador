@@ -458,7 +458,7 @@ p {
        .caja-generos {
            flex-direction: column;
            justify-content: space-between;
-           height: 1000px;
+           height: auto !important;
             margin-top: 10px;
        }
        
