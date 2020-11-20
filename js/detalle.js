@@ -141,13 +141,26 @@ var tituloCarousel = document.querySelector(`.titulocarousel`)
 
 
         if (generoTipo == "pelicula"){
-        fetch(`https://api.themoviedb.org/3/discover/movie?api_key=c5fa76b40f5a5ea03c60140eade37d35&language=en-US&sort_by=popularity.desc&include_adult=false&include_video=false&page=1&with_genres=${queryStringObjId}`)
+        
+                
+            fetch(`https://api.themoviedb.org/3/discover/movie?api_key=c5fa76b40f5a5ea03c60140eade37d35&language=en-US&sort_by=popularity.desc&include_adult=false&include_video=false&page=1&with_genres=${queryStringObjId}`)
         .then(function(response){
         return response.json();
         })
         .then(function(data){
             console.log(data);
+
+            tituloCarousel.innerHTML += `
+            <div class="titulogenero">
+            <h2>
+            ${nombreGenero}
+            </h2>
+            </div
+                    `
     
+            for (let index = 0; index < 10; index++) {
+                var resultados = data.results[index];
+            
             carousel.innerHTML += 
             `
             <article class="article-div">
@@ -156,7 +169,7 @@ var tituloCarousel = document.querySelector(`.titulocarousel`)
             </a>
             </article>
              `
-    
+            }
     
             })
     
@@ -166,38 +179,7 @@ var tituloCarousel = document.querySelector(`.titulocarousel`)
     }
     else if (generoTipo == "serie"){
 
-
-                
-        fetch(`https://api.themoviedb.org/3/genre/tv/list?api_key=c5fa76b40f5a5ea03c60140eade37d35&language=en-US`)
-        .then(function(response){
-        return response.json();
-        })
-        .then(function(data){
-            console.log(data);
-
-                
-                tituloCarousel.innerHTML += `
-                <div class="titulogenero">
-                <h2>
-                ${nombreGenero}
-                </h2>
-                </div>
-                `
-
-        
-            })
-           
-
-                
-    
-    
-            
-    
-        .catch(function(error){
-            console.log(`El error fue: ${error}`);
-        })
-        
-        
+              
 
         fetch(`https://api.themoviedb.org/3/discover/tv?api_key=c5fa76b40f5a5ea03c60140eade37d35&language=en-US&sort_by=popularity.desc&include_adult=false&include_video=false&page=1&with_genres=${queryStringObjId}`)
         .then(function(response){
@@ -205,6 +187,14 @@ var tituloCarousel = document.querySelector(`.titulocarousel`)
         })
         .then(function(data){
             console.log(data);
+
+            tituloCarousel.innerHTML += `
+                <div class="titulogenero">
+                <h2>
+                ${nombreGenero}
+                </h2>
+                </div>
+                `
 
             for (let index = 0; index < 10; index++) {
                 var resultados = data.results[index];
@@ -233,40 +223,6 @@ var tituloCarousel = document.querySelector(`.titulocarousel`)
         })
     }
     }
-
-
-    fetch(`https://api.themoviedb.org/3/discover/tv?api_key=c5fa76b40f5a5ea03c60140eade37d35&language=en-US&sort_by=popularity.desc&include_adult=false&include_video=false&page=1&with_genres=${queryStringObjId}`)
-    .then(function(response){
-    return response.json();
-    })
-    .then(function(data){
-        console.log(data);
-
-        for (let index = 0; index < 10; index++) {
-            var resultados = data.results[index];
-            
-    
-
-            carousel.innerHTML += 
-        `
-        <article class="article-div">
-        <a href="">
-        <img src="${linkimagen}${resultados.poster_path}" alt="">
-        </a>
-        </article>
-         `
-
-        }
-       
-
-            
-
-
-        })
-
-    .catch(function(error){
-        console.log(`El error fue: ${error}`);
-    })
 
 
 
