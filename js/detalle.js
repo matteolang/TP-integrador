@@ -4,8 +4,8 @@ window.addEventListener(`load`, function(){
 
 var sectionDetalle = document.querySelector(`#sectionDetalle`)
 var sectionReviews = document.querySelector(`#reviews`)
-
-
+var carousel = document.querySelector(`.divcarousel`)
+var tituloCarousel = document.querySelector(`.titulocarousel`)
 
     
 
@@ -15,12 +15,16 @@ var sectionReviews = document.querySelector(`#reviews`)
     var stringTipo = queryStringObj.get(`tipo`)
     var generoTipo = queryStringObj.get(`tipodegenero`)
     console.log(queryStringObj.get(`id`))
+    var nombreGenero = queryStringObj.get(`nombredelgenero`)
 
  
 
 
    if (stringTipo == "pelicula") {
 
+
+    carousel.innerHTML = ``
+    
 
     fetch(`https://api.themoviedb.org/3/movie/${queryStringObjId}?api_key=c5fa76b40f5a5ea03c60140eade37d35&language=en-US`)
     .then(function(response){
@@ -86,6 +90,10 @@ var sectionReviews = document.querySelector(`#reviews`)
     }
 
     else if (stringTipo == "serie"){
+
+
+        carousel.innerHTML = ``
+
 
         fetch(`https://api.themoviedb.org/3/tv/${queryStringObjId}?api_key=c5fa76b40f5a5ea03c60140eade37d35&language=en-US`)
     .then(function(response){
@@ -153,35 +161,36 @@ var sectionReviews = document.querySelector(`#reviews`)
     else if (generoTipo == "serie"){
 
 
-        sectionDetalle.innerHTML += 
-        `<div uk-slider>
-
-        <div class="uk-position-relative">
-    
-            <div class="uk-slider-container uk-light">
-                <ul id="container-generos" class="uk-slider-items uk-child-width-1-2 uk-child-width-1-3@s uk-child-width-1-4@m">
                 
-                </ul>
-            </div>
-    
-            <div class="uk-hidden@s uk-light">
-                <a class="uk-position-center-left uk-position-small" href="#"  uk-slidenav-previous uk-slider-item="previous"></a>
-                <a class="uk-position-center-right uk-position-small" href="#" uk-slidenav-next uk-slider-item="next"></a>
-            </div>
-    
-            <div class="uk-visible@s">
-                <a class="uk-position-center-left-out uk-position-small" href="#" id="flechaslidenav" uk-slidenav-previous uk-slider-item="previous"></a>
-                <a class="uk-position-center-right-out uk-position-small" href="#" id="flechaslidenav-dos" uk-slidenav-next uk-slider-item="next"></a>
-            </div>
-    
-        </div>
-    
-        <ul class="uk-slider-nav uk-dotnav uk-flex-center uk-margin"></ul>
-    
-    </div>
+        fetch(`https://api.themoviedb.org/3/genre/tv/list?api_key=c5fa76b40f5a5ea03c60140eade37d35&language=en-US`)
+        .then(function(response){
+        return response.json();
+        })
+        .then(function(data){
+            console.log(data);
+
+                
+                tituloCarousel.innerHTML += `
+                <div class="titulogenero">
+                <h2>
+                ${nombreGenero}
+                </h2>
+                </div>
                 `
+
+        
+            })
+           
+
+                
+    
+    
             
-        var containerGeneros = document.querySelector(`#container-generos`)
+    
+        .catch(function(error){
+            console.log(`El error fue: ${error}`);
+        })
+        
         
 
         fetch(`https://api.themoviedb.org/3/discover/tv?api_key=c5fa76b40f5a5ea03c60140eade37d35&language=en-US&sort_by=popularity.desc&include_adult=false&include_video=false&page=1&with_genres=${queryStringObjId}`)
@@ -191,19 +200,21 @@ var sectionReviews = document.querySelector(`#reviews`)
         .then(function(data){
             console.log(data);
 
-            for (let index = 0; index < data.results.length; index++) {
+            for (let index = 0; index < 10; index++) {
                 var resultados = data.results[index];
                 
-            }
-    
-            containerGeneros.innerHTML += 
+        
+
+                carousel.innerHTML += 
             `
-            <li>
+            <article class="article-div">
             <a href="">
             <img src="${linkimagen}${resultados.poster_path}" alt="">
             </a>
-            </li>
+            </article>
              `
+
+            }
            
 
                 
