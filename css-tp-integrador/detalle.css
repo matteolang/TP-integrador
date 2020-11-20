@@ -142,9 +142,13 @@ body {
     margin-bottom: 30px;
 }
 
+.article-div{
+    width: 17%;
+}
+
 .article-div a img {
     border-radius: 10px 10px 10px 10px;
-    width: 250px;
+    width: 100% !important;
     height: 375px;
     margin-bottom: 20px;
 }

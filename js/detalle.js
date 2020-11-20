@@ -148,8 +148,14 @@ var tituloCarousel = document.querySelector(`.titulocarousel`)
         .then(function(data){
             console.log(data);
     
-            sectionDetalle.innerHTML += 
-            ``
+            carousel.innerHTML += 
+            `
+            <article class="article-div">
+            <a href="">
+            <img src="${linkimagen}${resultados.poster_path}" alt="">
+            </a>
+            </article>
+             `
     
     
             })
@@ -229,7 +235,38 @@ var tituloCarousel = document.querySelector(`.titulocarousel`)
     }
 
 
- 
+    fetch(`https://api.themoviedb.org/3/discover/tv?api_key=c5fa76b40f5a5ea03c60140eade37d35&language=en-US&sort_by=popularity.desc&include_adult=false&include_video=false&page=1&with_genres=${queryStringObjId}`)
+    .then(function(response){
+    return response.json();
+    })
+    .then(function(data){
+        console.log(data);
+
+        for (let index = 0; index < 10; index++) {
+            var resultados = data.results[index];
+            
+    
+
+            carousel.innerHTML += 
+        `
+        <article class="article-div">
+        <a href="">
+        <img src="${linkimagen}${resultados.poster_path}" alt="">
+        </a>
+        </article>
+         `
+
+        }
+       
+
+            
+
+
+        })
+
+    .catch(function(error){
+        console.log(`El error fue: ${error}`);
+    })
 
 
 
