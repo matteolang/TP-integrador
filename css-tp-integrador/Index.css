@@ -60,7 +60,7 @@ body {
 .header2 ul{
     display: flex;
     list-style: none;
-    width: 200px;
+    width: 400px;
     justify-content: space-around;
     }
 
@@ -338,11 +338,11 @@ h3 {
        }
     
        .header2 ul {
-           width: 200px;
-           margin-left: 80px;
+           width: 250px;
+           margin-left: 20px;
            justify-content: space-between;
            padding-right: 0px;
-           padding-left: 70px;
+           padding-left: 0px;
        }
        
        .header2 ul li a {

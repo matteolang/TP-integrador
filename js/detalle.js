@@ -54,7 +54,6 @@ var tituloCarousel = document.querySelector(`.titulocarousel`)
         </div>
     </section>`
     
-    
 
         })
 
@@ -92,6 +91,8 @@ var tituloCarousel = document.querySelector(`.titulocarousel`)
     else if (stringTipo == "serie"){
 
 
+       
+
         carousel.innerHTML = ``
 
 
@@ -116,7 +117,7 @@ var tituloCarousel = document.querySelector(`.titulocarousel`)
         </div>
         <div class="nombregenero">
         <p>Genero:</p>
-        <a href="">${data.genres[0].name}</a>
+        <a href="detalle.html?tipo=genero&id=${data.genres[0].id}&tipodegenero=serie&nombredelgenero=${data.genres[0].name}">${data.genres[0].name}</a>
         </div>
         <div class="fechasalida">
         <p>Fecha de salida: ${data.first_air_date}</p>
@@ -134,6 +135,9 @@ var tituloCarousel = document.querySelector(`.titulocarousel`)
     .catch(function(error){
         console.log(`El error fue: ${error}`);
     })
+
+
+    
         
     } 
     else if (stringTipo == "genero"){
@@ -164,7 +168,7 @@ var tituloCarousel = document.querySelector(`.titulocarousel`)
             carousel.innerHTML += 
             `
             <article class="article-div">
-            <a href="">
+            <a class="peliclickeable" href="detalle.html?id=${resultados.id}&tipo=pelicula">
             <img src="${linkimagen}${resultados.poster_path}" alt="">
             </a>
             </article>
@@ -204,7 +208,7 @@ var tituloCarousel = document.querySelector(`.titulocarousel`)
                 carousel.innerHTML += 
             `
             <article class="article-div">
-            <a href="">
+            <a class="peliclickeable" href="detalle.html?id=${resultados.id}&tipo=serie">
             <img src="${linkimagen}${resultados.poster_path}" alt="">
             </a>
             </article>
