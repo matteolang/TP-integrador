@@ -123,6 +123,31 @@ body {
     justify-content: space-between;
 }
 
+.boton-favs {
+    width: 120px;
+    border: none;
+    font-family: 'Josefin Sans', sans-serif;
+    color:  #f4f1bb;
+    background-color: black;
+    border-radius: 10px 10px 10px 10px;
+    padding: 5px;
+    cursor: pointer;
+    margin-left: 25%;
+}
+
+.boton-favss {
+    width: 120px;
+    border: none;
+    font-family: 'Josefin Sans', sans-serif;
+    color:  #f4f1bb;
+    background-color: black;
+    border-radius: 10px 10px 10px 10px;
+    padding: 5px;
+    cursor: pointer;
+   margin-top: 50px;
+}
+
+
 .divcarousel {
     display: flex;
     flex-wrap: wrap;
@@ -144,6 +169,7 @@ body {
 
 .article-div{
     width: 19%;
+    margin-bottom: 10px;
 }
 
 .article-div a img {
@@ -615,5 +641,9 @@ font-size: 20px;
 
  .tituloreviews h2 {
      font-size: 25px;
+ }
+
+ .boton-favs {
+     margin-left: 30%;
  }
 }

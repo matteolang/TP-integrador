@@ -4,6 +4,18 @@ body {
    
 }
 
+.boton-favs {
+    width: 120px;
+    border: none;
+    font-family: 'Josefin Sans', sans-serif;
+    color:  #f4f1bb;
+    background-color: black;
+    border-radius: 10px 10px 10px 10px;
+    padding: 5px;
+    cursor: pointer;
+    margin-left: 30%;
+}
+
 ::-webkit-scrollbar {
     display: none;
 }
@@ -227,8 +239,13 @@ h3 {
 }
 
 .casapapel {
+    display: grid;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
     margin-left: 0.5%;
     margin-right: 0.5%;
+    height: 550px
 }
 
 .casapapel a img{
@@ -520,5 +537,13 @@ h3 {
 
     .casapapel a img {
         height: 244.27px;
+    }
+
+    .boton-favs {
+        margin-left: 12%;
+    }
+
+    .casapapel {
+        height: 300px;
     }
 }
