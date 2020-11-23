@@ -61,6 +61,24 @@ body {
     color: black;
 }
 
+.formulario-filtros {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 200px;
+    padding-right: 20px;
+}
+
+.formulario-filtros div {
+    display: flex;
+    align-items: center;
+}
+
+.formulario-filtros p {
+    margin: 0px !important;
+    color: black;
+}
+
 .header2 {
     display: flex;
     justify-content: center;
@@ -85,13 +103,15 @@ body {
 }
 
 .searchbar {
+    
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
 }
 
 .search {
     display: flex;
+    justify-content: space-between;
     width: 100%;
 }
 
@@ -352,6 +372,8 @@ h3 {
            padding-right: 20px;
            padding-bottom: 20px;
            padding-top: 20px;
+           flex-wrap: wrap;
+           padding-left: 30px;
        }
     
        .header2 ul {
