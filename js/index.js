@@ -49,7 +49,7 @@ fetch(`https://api.themoviedb.org/3/movie/popular?api_key=c5fa76b40f5a5ea03c6014
             <a class="peliclickeable" href="detalle.html?id=${results.id}&tipo=pelicula">
             <img src="${linkimagen}${results.poster_path}" alt="">
             </a>
-            <button class="boton-favs">Agregar a favoritos</button>
+            
             </li>
              `
     
@@ -83,7 +83,7 @@ fetch(`https://api.themoviedb.org/3/movie/popular?api_key=c5fa76b40f5a5ea03c6014
             <a class="peliclickeable" href="detalle.html?id=${results.id}&tipo=serie">
             <img src="${linkimagen}${results.poster_path}" alt="">
             </a>
-            <button class="boton-favs">Agregar a favoritos</button>
+            
             </li>
              `
         }
@@ -113,7 +113,7 @@ fetch(`https://api.themoviedb.org/3/movie/popular?api_key=c5fa76b40f5a5ea03c6014
             <a class="peliclickeable" href="detalle.html?id=${resultss.id}&tipo=pelicula">
             <img src="${linkimagen}${resultss.poster_path}" alt="">
             </a>
-            <button class="boton-favs">Agregar a favoritos</button>
+            
             </li>
              `
     
@@ -140,7 +140,7 @@ fetch(`https://api.themoviedb.org/3/movie/popular?api_key=c5fa76b40f5a5ea03c6014
             <a class="peliclickeable" href="detalle.html?id=${resultss.id}&tipo=serie">
             <img src="${linkimagen}${resultss.poster_path}" alt="">
             </a>
-            <button class="boton-favs">Agregar a favoritos</button>
+            
             </li>
              `
     
@@ -169,7 +169,7 @@ fetch(`https://api.themoviedb.org/3/movie/popular?api_key=c5fa76b40f5a5ea03c6014
                 <a class="peliclickeable" href="detalle.html?id=${resultsss.id}&tipo=pelicula">
                 <img src="${linkimagen}${resultsss.poster_path}" alt="">
                 </a>
-                <button class="boton-favs">Agregar a favoritos</button>
+                
                 </li>
                  `
         
@@ -196,7 +196,7 @@ fetch(`https://api.themoviedb.org/3/movie/popular?api_key=c5fa76b40f5a5ea03c6014
                 <a class="peliclickeable" href="detalle.html?id=${resultsss.id}&tipo=serie">
                 <img src="${linkimagen}${resultsss.poster_path}" alt="">
                 </a>
-                <button class="boton-favs">Agregar a favoritos</button>
+                
                 </li>
                  `
         

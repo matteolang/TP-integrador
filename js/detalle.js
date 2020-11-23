@@ -177,7 +177,7 @@ var tituloCarousel = document.querySelector(`.titulocarousel`)
             <a class="peliclickeable" href="detalle.html?id=${resultados.id}&tipo=pelicula">
             <img src="${linkimagen}${resultados.poster_path}" alt="">
             </a>
-            <button class="boton-favs">Agregar a favoritos</button>
+            
             </article>
              `
             }
@@ -218,7 +218,7 @@ var tituloCarousel = document.querySelector(`.titulocarousel`)
             <a class="peliclickeable" href="detalle.html?id=${resultados.id}&tipo=serie">
             <img src="${linkimagen}${resultados.poster_path}" alt="">
             </a>
-            <button class="boton-favs">Agregar a favoritos</button>
+            
             </article>
              `
 
