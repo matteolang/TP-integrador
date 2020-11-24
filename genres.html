@@ -7,10 +7,12 @@
     <link rel="stylesheet" href="css-tp-integrador/uikit.min.css" />
     <script src="js/uikit.min.js"></script>
     <script src="js/uikit-icons.min.js"></script>
+    <link rel="stylesheet" href="css-tp-integrador/Index.css">
     <link rel="stylesheet" href="css-tp-integrador/genres.css">
     <link rel="icon" type="png" href="imagenes-tp-integrador/Logo-enreel.png">
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&display=swap" rel="stylesheet">
     <script src="js/genres.js"></script>
+    <script src="js/busqueda.js"></script>
     
     
 </head>
@@ -33,7 +35,19 @@
     <section class="header2">
         <!--Cambios hechos en la searchbar-->
         <div class="searchbar"> 
-            <form action="" method="GET" class="search">
+            <form action="busqueda.html" method="GET" class="search">
+               <div class="formulario-filtros">
+                    <p>Tipo:</p>
+                    <div>
+                    <input type="checkbox" name="tipoSeries" value="series" id="">
+                    <p>Series</p>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="tipoPeliculas" value="peliculas" id="">
+                        <p>Peliculas</p>
+                        </div>
+                </div>
+                
                <input type="text" name="barrabusqueda" class="searchterm" placeholder="Buscar...">
                <button type="submit" class="searchbutton"><img class="iconobuscar" src="imagenes-tp-integrador/iconobuscar-removebg-preview.png" alt="icono de buscar"></button>
             </form>
@@ -43,7 +57,7 @@
             <li  class="homegeneros"><a href="Index.html">Home</a></li>
             <li  class="homegeneros"><a href="genres.html">Generos</a></li>
             <li  class="homegeneros"><a href="favoritos.html">Favoritos</a></li>
-            <li  class="homegeneros"><a href="busqueda.html">Busqueda</a></li>
+           
         </ul>
     </section>
 </Header>

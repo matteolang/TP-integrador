@@ -20,8 +20,12 @@ body {
     display: none;
 }
 
+p {
+    font-family: 'Josefin Sans', sans-serif;
+}
+
 .enreeltitulo {
-    font-family: 'Josefin Sans', sans-serif;;
+    font-family: 'Josefin Sans', sans-serif;
    font-size: 50px;
    padding-right: 70px;
    color: black;
@@ -90,7 +94,7 @@ body {
 .header2 ul{
     display: flex;
     list-style: none;
-    width: 400px;
+    width: 300px;
     justify-content: space-around;
     }
 
@@ -377,8 +381,8 @@ h3 {
        }
     
        .header2 ul {
-           width: 250px;
-           margin-left: 20px;
+           width: 220px;
+           margin-left: 60px;
            justify-content: space-between;
            padding-right: 0px;
            padding-left: 0px;

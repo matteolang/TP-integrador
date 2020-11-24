@@ -1,5 +1,7 @@
 window.addEventListener(`load`, function(){
 
+    
+
     var linkimagen = "https://image.tmdb.org/t/p/w500"
 
 var sectionDetalle = document.querySelector(`#sectionDetalle`)
