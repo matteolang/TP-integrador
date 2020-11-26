@@ -1,0 +1,51 @@
+.section-login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 25vh;
+    margin-bottom: 25vh;
+}
+
+.section-login h2 {
+    font-family: 'Josefin Sans', sans-serif;
+    
+}
+
+.section-login form input{
+    border: none;
+    height: 30px;
+    border-radius: 10px 10px 10px 10px;
+}
+
+.section-login form button {
+    border: none;
+    padding: 5px;
+    color: #f4f1bb;
+    background-color: black;
+    margin-left: 10px;
+    border-radius: 10px 10px 10px 10px;
+    font-family: 'Josefin Sans', sans-serif;
+    cursor: pointer;
+    height: 30px;
+}
+
+.error {
+    border: 1px solid red !important;
+    
+}
+
+#errorp {
+    color: red !important;
+    margin-top: 10px !important;
+}
+
+#form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#form div {
+    display: flex;
+    justify-content: center;
+}

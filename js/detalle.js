@@ -1,4 +1,24 @@
+function eliminarFavs(id) {
+    var posicion = favsPelis.indexOf(id)
+console.log(posicion)
+favsPelis.splice(posicion, 1)
+}////!?!?!?!?
+
 window.addEventListener(`load`, function(){
+//localStorage.clear()
+    var favsPelis =  JSON.parse(localStorage.getItem("favoritos_peliculas"))
+    var favsSeries =  JSON.parse(localStorage.getItem("favoritos_series"))
+
+    if (favsPelis == null) {
+        favsPelis = []
+    }
+
+    if (favsSeries == null) {
+        favsSeries = []
+    }
+
+
+
 
     
 
@@ -58,13 +78,65 @@ var tituloCarousel = document.querySelector(`.titulocarousel`)
         <button class="boton-favss">Agregar a favoritos</button>
         </div>
     </section>`
-    
 
+
+    var botonFavs = document.querySelector(`.boton-favss`)
+
+    botonFavs.addEventListener(`click`, function(){
+        alert(`Agregaste esta pelicula a favoritos.`)
+        favsPelis.push(queryStringObjId)
+        localStorage.setItem("favoritos_peliculas", JSON.stringify(favsPelis))
+    })
+
+    for (let index = 0; index < favsPelis.length; index++) {
+        const element = favsPelis[index];
+        if (element == queryStringObjId) {
+            sectionDetalle.innerHTML = `<section class="foto-detalle">
+            <img src="${linkimagen}${data.poster_path}" alt="">
+        </section>
+        <section class="section-sinopsis">
+            <div class="titulo">
+                <h2>${data.title}</h2>
+            </div>
+            <div class="sinopsis">
+                <p>${data.overview}</p>
+            </div>
+            <div>
+            <p id="promediovotos">Promedio de votos: ${data.vote_average}</p>
+            </div>
+            <div class="reproducir">
+            <button type="submit"><img src="imagenes-tp-integrador/iconoplay.png" alt=""></button>
+                <a href="">Reproducir</a>
+            </div>
+            <div class="nombregenero">
+            <button class="boton-eliminar-detalle">Eliminar de favoritos</button>
+            </div>
+        </section>`
+        }
+    }
+   
+   
+    var botonFavsEliminar = document.querySelector(`.boton-eliminar-detalle`)   
+
+   
+    botonFavsEliminar.addEventListener("click", function () {
+        alert(`Quitaste esta pelicula de favoritos.`)
+        for (let index = 0; index < favsPelis.length; index++) {
+            const element = favsPelis[index];
+            if (element == queryStringObjId) {
+                favsPelis.splice(index,1)
+                localStorage.setItem("favoritos_peliculas", JSON.stringify(favsPelis))
+            }
+        }
+    })
+   
+    
         })
 
     .catch(function(error){
         console.log(`El error fue: ${error}`);
     })
+    console.log(localStorage)
 
     fetch(`https://api.themoviedb.org/3/movie/${queryStringObjId}/reviews?api_key=c5fa76b40f5a5ea03c60140eade37d35&language=en-US&page=1`)
     .then(function(response){
@@ -84,6 +156,8 @@ var tituloCarousel = document.querySelector(`.titulocarousel`)
     
 
         })
+
+        
 
     .catch(function(error){
         console.log(`El error fue: ${error}`);
@@ -137,8 +211,64 @@ var tituloCarousel = document.querySelector(`.titulocarousel`)
     </section>
         `
 
+        var botonFavs = document.querySelector(`.boton-favss`)
 
-        })
+    botonFavs.addEventListener(`click`, function(){
+        alert(`Agregaste esta serie a favoritos.`)
+        favsSeries.push(queryStringObjId)
+        localStorage.setItem("favoritos_series", JSON.stringify(favsSeries))
+    })
+
+        for (let index = 0; index < favsSeries.length; index++) {
+            const element = favsSeries[index];
+            if (element == queryStringObjId) {
+                sectionDetalle.innerHTML = `<section class="foto-detalle">
+                <img src="${linkimagen}${data.poster_path}" alt="">
+            </section>
+            <section class="section-sinopsis">
+                <div class="titulo">
+                    <h2>${data.name}</h2>
+                </div>
+                <div class="sinopsis">
+                    <p>${data.overview}</p>
+                </div>
+                <div class="nombregenero">
+                <p>Genero:</p>
+                <a href="detalle.html?tipo=genero&id=${data.genres[0].id}&tipodegenero=serie&nombredelgenero=${data.genres[0].name}">${data.genres[0].name}</a>
+                </div>
+                <div class="fechasalida">
+                <p>Fecha de salida: ${data.first_air_date}</p>
+                </div>
+                <div class="reproducir">
+                <button type="submit"><img src="imagenes-tp-integrador/iconoplay.png" alt=""></button>
+                    <a href="">Reproducir</a>
+                </div>
+                <div class="nombregenero">
+                <button class="boton-eliminar-detalle">Eliminar de favoritos</button>
+                </div>
+            </section>`
+            }
+        
+    }
+    var botonFavsEliminar = document.querySelector(`.boton-eliminar-detalle`)   
+
+   
+    botonFavsEliminar.addEventListener("click", function () {
+        alert(`Quitaste esta serie de favoritos.`)
+        for (let index = 0; index < favsSeries.length; index++) {
+            const element = favsSeries[index];
+            if (element == queryStringObjId) {
+                favsSeries.splice(index,1)
+                localStorage.setItem("favoritos_series", JSON.stringify(favsSeries))
+            }
+        }
+    })
+
+    console.log(localStorage)
+
+})
+
+        
 
     .catch(function(error){
         console.log(`El error fue: ${error}`);

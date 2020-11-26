@@ -1,8 +1,35 @@
-.section-favoritos div {
+#titulofavsPelis {
     display: flex;
     flex-wrap: wrap;
     margin: 20px;
     justify-content: center;
+}
+
+
+.titulofavs {
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+}
+
+.titulofavs p {
+    margin: auto !important;
+    margin-bottom: 50px !important;
+}
+
+.titulofavs h2 {
+    margin: auto !important;
+    margin-top: 50px !important;
+    margin-bottom: 50px !important;
+    text-decoration: underline;
+}
+
+#titulofavsSeries {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px;
+    justify-content: center;
+    margin-top: 50px;
 }
 
 .section-favoritos h2 {
@@ -10,11 +37,76 @@
     font-size: 24px;
 }
 
-.div-favoritos {
+#div-favoritos-pelis {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-around;
 }
 
-img {
-    width: 100px;
+#div-favoritos-series {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.article-contenedor {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 19%;
+    margin-bottom: 10px;
+}
+
+.article-contenedor img {
+    width: 100%;
+    border-radius: 10px 10px 10px 10px;
+    height: 375px;
+}
+
+.bienvenido-usuario {
+    margin-top: 50px;
+}
+
+.bienvenido-usuario p {
+    font-size: 40px !important;
+}
+
+.boton-eliminar {
+    border: none;
+    border-radius: 10px 10px 10px 10px;
+    padding: 7px;
+    color: #f4f1bb;
+    font-family: 'Josefin Sans', sans-serif;
+    background-color: black;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+
+
+@media only screen and (max-width: 420px){
+
+    #div-favoritos-pelis {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+    }
+    
+    #div-favoritos-series {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .article-contenedor {
+        width: 80%;
+    }
+
+
 }

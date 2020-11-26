@@ -233,6 +233,18 @@ body {
     align-items: center;
 }
 
+.boton-eliminar-detalle {
+    border: none;
+    border-radius: 10px 10px 10px 10px;
+    padding: 7px;
+    color: #f4f1bb;
+    font-family: 'Josefin Sans', sans-serif;
+    background-color: black;
+    cursor: pointer;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
 .nombregenero p {
     font-size: 20px;
 }

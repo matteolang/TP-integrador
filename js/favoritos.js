@@ -1,154 +1,139 @@
-window.addEventListener(`load`,function(){
+//ARREGLAR ERROR UNEXPECTED INPUT END
 
+function eliminarFav(arraydepelis, id) {
+      
+    var posicionDelId = arraydepelis.indexOf(id)
+     arraydepelis.splice(posicionDelId, 1)
+ 
+}  
 
+window.addEventListener("load",function(){
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    /*
-    var botonFavs = document.querySelectorAll(`.boton-favs`)
-    
-    var linkimagen = "https://image.tmdb.org/t/p/w500"
-
-    var favs =  JSON.parse(localStorage.getItem("favoritos"))
-
-    if (favs == null) {
-        favs = []
-    }
-
-    
-        
-        var queryString = location.search
-        var queryStringObj = new URLSearchParams (queryString)
-        var queryStringObjId = queryStringObj.get(`id`)
-        
-        favs.push(queryStringObjId)
-    
-        localStorage.setItem("favoritos", JSON.stringify(favs))
-  
-        console.log(localStorage)
-
-
-  //  botonFavs.addEventListener(`click`,function () {
-    //    var idClickeado = `${id}`
-      //  console.log(`anda o no anda`)
-        //favs.push(idClickeado)
-    //})
-
-    
-
-   /*
     var queryString = location.search
     var queryStringObj = new URLSearchParams (queryString)
-    var queryStringObjId = queryStringObj.get(`id`)
-    var queryStringObjTipo = queryStringObj.get(`tipo`)
+    var queryStringObjNombreUsuario = queryStringObj.get(`nombreusuario`)
+  
+    var sectionBienvenido = document.querySelector(`.bienvenido-usuario`)
+
+    var sesionNombre = JSON.parse(sessionStorage.getItem("Nombre"))
+
     
 
-    var favs =  JSON.parse(localStorage.getItem("favoritos_id"))
-    var favss = JSON.parse(localStorage.getItem("favoritos_tipo"))
-
-    if (favs == null) {
-        favs = []
+    if (sesionNombre[0] == null){
+        sesionNombre = []
     }
 
+    sesionNombre.push(queryStringObjNombreUsuario)
+    sessionStorage.setItem("Nombre", JSON.stringify(sesionNombre))
+    console.log(sesionNombre)
 
+    if (sesionNombre.length > 1) {
+        sesionNombre.splice(0, 1)
+        sessionStorage.setItem("Nombre", JSON.stringify(sesionNombre))
+    }
 
-   favs.push(queryStringObjId)
-   
+    if (sesionNombre[0] == null){
+        sesionNombre = []
+    }
 
-   if (queryStringObjId == null) {
-       favs.pop()
-   }
+    console.log(sessionStorage)
 
+    sectionBienvenido.innerHTML += `<p>Bienvenid@, ${sesionNombre[0]}!</p>`
 
-   localStorage.setItem("favoritos_id", JSON.stringify(favs))
+    if (sesionNombre[0] == undefined){
+        sectionBienvenido.innerHTML = ``
+    }
 
+    var linkimagen = "https://image.tmdb.org/t/p/w500"
+console.log(localStorage)
+var tituloPelis = document.getElementById(`titulofavsPelis`)
+var tituloSeries = document.getElementById(`titulofavsSeries`)
+var storagePelis = localStorage.getItem(`favoritos_peliculas`)
+var storageSeries = localStorage.getItem(`favoritos_series`)
+var tituloFavs = document.querySelector(`.titulofavs`)
+var contenedorPelis = document.getElementById(`div-favoritos-pelis`)
+var contenedorSeries = document.getElementById(`div-favoritos-series`)
+var favsPelis =  JSON.parse(localStorage.getItem("favoritos_peliculas"))
 
-if (favss == null) {
-    favss = []
+var favsSeries = JSON.parse(localStorage.getItem("favoritos_series"))
+
+if (storagePelis == null && storageSeries == null) {
+    tituloPelis.style.display = `none`;
+    tituloSeries.style.display = `none`;
+
+    tituloFavs.innerHTML = `<h2>FAVORITOS</h2><p>Aun no tienes favoritos.</p>`
+
 }
 
-favss.push(queryStringObjTipo)
+if (storageSeries == null) {
+    tituloSeries.style.display = `none`;
+    contenedorSeries.style.display = `none`;
+}
 
-if (queryStringObjTipo == `genero`) {
-    favs.pop()
-    favss.pop()
-   }
+if (storagePelis == null) {
+    tituloPelis.style.display = `none`;
+    contenedorPelis.style.display = `none`;
+}
 
-   localStorage.setItem("favoritos_tipo", JSON.stringify(favss))
+console.log(favsPelis)
 
-   console.log(localStorage)
-
-    */
-   /*
-var contenedorFavoritos = document.querySelector(`.div-favoritos`)
-
-
-// PARA PELICULAS 
-
-for (let index = 0; index < favs.length; index++) {
-    const element = favs[index];
-
+//Para peliculas marcadas como favs
+for (let index = 0; index < favsPelis.length; index++) {
+    const element = favsPelis[index];
+    
     fetch(`https://api.themoviedb.org/3/movie/${element}?api_key=c5fa76b40f5a5ea03c60140eade37d35&language=en-US`)
     .then(function(response){
     return response.json();
     })
     .then(function(data){
         console.log(data);
-
-        contenedorFavoritos.innerHTML += 
+        
+        
+        contenedorPelis.innerHTML += 
         `
-        <article>
-        <a href="">
-            <img src="${linkimagen}${data.poster_path}" alt="">
-        </a>
-        <button></button>
-    </article>
+        <article class="article-contenedor">
+    <a href="detalle.html?id=${element}&tipo=pelicula"><img src="${linkimagen}${data.poster_path}" alt=""></a>
+    <button onclick="eliminarFav("${favsPelis}", "${data.id}")" id="${data.id}" tipo=pelicula class="boton-eliminar">Eliminar de favoritos</button>
+</article>
         `
 
         })
     .catch(function(error){
         console.log(`El error fue: ${error}`);
     })
+    
+
 }
-    */
-})
+
+for (let index = 0; index < favsSeries.length; index++) {
+    const element = favsSeries[index];
+    
+    fetch(`https://api.themoviedb.org/3/tv/${element}?api_key=c5fa76b40f5a5ea03c60140eade37d35&language=en-US`)
+    .then(function(response){
+    return response.json();
+    })
+    .then(function(data){
+        console.log(data);
+        
+        contenedorSeries.innerHTML += 
+        `
+        <article class="article-contenedor">
+    <a href="detalle.html?id=${element}&tipo=serie"><img src="${linkimagen}${data.poster_path}" alt=""></a>
+    <button onclick="eliminarFav("${favsPelis}", "${data.id}")" id="${data.id}" tipo=serie class="boton-eliminar">Eliminar de favoritos</button>
+</article>
+        `
+
+
+        })
+    .catch(function(error){
+        console.log(`El error fue: ${error}`);
+    })
+
+}
+
+//
+
+
+  
+//
+});

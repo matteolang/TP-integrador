@@ -1,23 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title class="textosheader">Enreel</title>
-    <link rel="stylesheet" href="css-tp-integrador/uikit.min.css" />
-    <script src="js/uikit.min.js"></script>
-    <script src="js/uikit-icons.min.js"></script>
-    <link rel="stylesheet" href="css-tp-integrador/Index.css">
-    <link rel="icon" type="png" href="imagenes-tp-integrador/Logo-enreel.png">
-    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css-tp-integrador/genres.css">
-    <script src="js/busqueda.js"></script>
-    <link rel="stylesheet" href="css-tp-integrador/busqueda.css">
-    
-    
-</head>
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Enreel</title>
+        <link rel="icon" type="png" href="imagenes-tp-integrador/Logo-enreel.png">
+        <link rel="stylesheet" href="css-tp-integrador/Index.css">
+        <link rel="stylesheet" href="css-tp-integrador/genres.css">
+        <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css-tp-integrador/favoritos.css">
+        <script src="js/favoritos.js"></script>
+        <script src="js/detalle.js"></script>
+        <script src="js/busqueda.js"></script>
+        <link rel="stylesheet" href="css-tp-integrador/login.css">
+        <script src="js/login.js"></script>
+        
+    </head>
 <body>
-    
     <Header>
         <section class="header1">
                 <ul>
@@ -61,29 +62,18 @@
         </section>
     </Header>
 
-    <div id="loader"></div>
 
-
-    <section id="resultados-peliculas">
-        <div id="contenedorTituloPelis"></div>
-
-        <div id="contenedores-peliculas">
-
-        </div>
-
+    <section class="section-login">
+        <h2>Ingrese su nombre:</h2>
+        <form id="form" action="favoritos.html?" method="GET">
+            <div>            <input name="nombreusuario" type="text" placeholder="Nombre...">
+            <button id="botonsubmit" type="submit">Enviar</button>
+            </div>
+        </form>
+        
+    
     </section>
-    <section id="resultados-series">
-        <div id="contenedorTituloSeries"></div>
-        <div id="contenedores-series">
-
-        </div>
-    </section>
-
-
-
-
-
-
+    
 
 
     <footer class="footer">
@@ -118,7 +108,3 @@
     </footer>
 </body>
 </html>
-
-
-
-
