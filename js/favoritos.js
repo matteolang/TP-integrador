@@ -27,6 +27,15 @@ window.addEventListener("load",function(){
     sessionStorage.setItem("Nombre", JSON.stringify(sesionNombre))
     console.log(sesionNombre)
 
+    for (let index = 0; index < sesionNombre.length; index++) {
+        const element = sesionNombre[index];
+        if (sesionNombre.length > 1 && element == null) {
+                var posicionNull = sesionNombre.indexOf(null)
+                    sesionNombre.splice(posicionNull, 1)
+                    sessionStorage.setItem("Nombre", JSON.stringify(sesionNombre))
+        }
+    }
+
     if (sesionNombre.length > 1) {
         sesionNombre.splice(0, 1)
         sessionStorage.setItem("Nombre", JSON.stringify(sesionNombre))
