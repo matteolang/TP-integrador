@@ -19,7 +19,7 @@ window.addEventListener("load",function(){
 
     
 
-    if (sesionNombre[0] == null){
+    if (sesionNombre == null){
         sesionNombre = []
     }
 
@@ -66,7 +66,7 @@ var favsPelis =  JSON.parse(localStorage.getItem("favoritos_peliculas"))
 
 var favsSeries = JSON.parse(localStorage.getItem("favoritos_series"))
 
-if (storagePelis == null && storageSeries == null) {
+if (storagePelis == `[]` && storageSeries == `[]`) {
     tituloPelis.style.display = `none`;
     tituloSeries.style.display = `none`;
 
@@ -74,12 +74,12 @@ if (storagePelis == null && storageSeries == null) {
 
 }
 
-if (storageSeries == null) {
+if (storageSeries == `[]`) {
     tituloSeries.style.display = `none`;
     contenedorSeries.style.display = `none`;
 }
 
-if (storagePelis == null) {
+if (storagePelis == `[]`) {
     tituloPelis.style.display = `none`;
     contenedorPelis.style.display = `none`;
 }
