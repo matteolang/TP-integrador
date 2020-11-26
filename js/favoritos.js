@@ -1,9 +1,28 @@
-//ARREGLAR ERROR UNEXPECTED INPUT END
 
-function eliminarFav(arraydepelis, id) {
+
+function eliminarFav(id) {
+    
+    var favsPelis =  JSON.parse(localStorage.getItem("favoritos_peliculas"))
       
-    var posicionDelId = arraydepelis.indexOf(id)
-     arraydepelis.splice(posicionDelId, 1)
+   var posicionDelId = favsPelis.indexOf(id)
+    favsPelis.splice(posicionDelId, 1)
+
+    localStorage.setItem("favoritos_peliculas", JSON.stringify(favsPelis))
+
+    location.reload();
+return false;
+}  
+
+function eliminarFavSerie(id) {
+    var favsSeries =  JSON.parse(localStorage.getItem("favoritos_series"))
+      
+   var posicionDelId = favsSeries.indexOf(id)
+    favsSeries.splice(posicionDelId, 1)
+
+    localStorage.setItem("favoritos_series", JSON.stringify(favsSeries))
+
+    location.reload();
+return false;
  
 }  
 
@@ -102,7 +121,7 @@ for (let index = 0; index < favsPelis.length; index++) {
         `
         <article class="article-contenedor">
     <a href="detalle.html?id=${element}&tipo=pelicula"><img src="${linkimagen}${data.poster_path}" alt=""></a>
-    <button onclick="eliminarFav("${favsPelis}", "${data.id}")" id="${data.id}" tipo=pelicula class="boton-eliminar">Eliminar de favoritos</button>
+    <button onclick="eliminarFav(${data.id})" id="${data.id}" tipo=pelicula class="boton-eliminar">Eliminar de favoritos</button>
 </article>
         `
 
@@ -113,6 +132,7 @@ for (let index = 0; index < favsPelis.length; index++) {
     
 
 }
+
 
 for (let index = 0; index < favsSeries.length; index++) {
     const element = favsSeries[index];
@@ -128,7 +148,7 @@ for (let index = 0; index < favsSeries.length; index++) {
         `
         <article class="article-contenedor">
     <a href="detalle.html?id=${element}&tipo=serie"><img src="${linkimagen}${data.poster_path}" alt=""></a>
-    <button onclick="eliminarFav("${favsPelis}", "${data.id}")" id="${data.id}" tipo=serie class="boton-eliminar">Eliminar de favoritos</button>
+    <button onclick="eliminarFavSerie(${data.id})" id="${data.id}" tipo=serie class="boton-eliminar">Eliminar de favoritos</button>
 </article>
         `
 
@@ -142,7 +162,7 @@ for (let index = 0; index < favsSeries.length; index++) {
 
 //
 
-
+console.log(favsPelis)
   
 //
 });

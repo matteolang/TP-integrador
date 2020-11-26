@@ -1,8 +1,4 @@
-function eliminarFavs(id) {
-    var posicion = favsPelis.indexOf(id)
-console.log(posicion)
-favsPelis.splice(posicion, 1)
-}////!?!?!?!?
+
 
 window.addEventListener(`load`, function(){
 //localStorage.clear()
@@ -83,9 +79,11 @@ var tituloCarousel = document.querySelector(`.titulocarousel`)
     var botonFavs = document.querySelector(`.boton-favss`)
 
     botonFavs.addEventListener(`click`, function(){
-        alert(`Agregaste esta pelicula a favoritos.`)
-        favsPelis.push(queryStringObjId)
+        //alert(`Agregaste esta pelicula a favoritos.`)
+        favsPelis.push(parseInt(queryStringObjId))
         localStorage.setItem("favoritos_peliculas", JSON.stringify(favsPelis))
+        location.reload();
+return false;
     })
 
     for (let index = 0; index < favsPelis.length; index++) {
@@ -120,12 +118,14 @@ var tituloCarousel = document.querySelector(`.titulocarousel`)
 
    
     botonFavsEliminar.addEventListener("click", function () {
-        alert(`Quitaste esta pelicula de favoritos.`)
+       // alert(`Quitaste esta pelicula de favoritos.`)
         for (let index = 0; index < favsPelis.length; index++) {
             const element = favsPelis[index];
             if (element == queryStringObjId) {
                 favsPelis.splice(index,1)
                 localStorage.setItem("favoritos_peliculas", JSON.stringify(favsPelis))
+                location.reload();
+return false;
             }
         }
     })
@@ -214,9 +214,11 @@ var tituloCarousel = document.querySelector(`.titulocarousel`)
         var botonFavs = document.querySelector(`.boton-favss`)
 
     botonFavs.addEventListener(`click`, function(){
-        alert(`Agregaste esta serie a favoritos.`)
-        favsSeries.push(queryStringObjId)
+       // alert(`Agregaste esta serie a favoritos.`)
+        favsSeries.push(parseInt(queryStringObjId))
         localStorage.setItem("favoritos_series", JSON.stringify(favsSeries))
+        location.reload();
+return false;
     })
 
         for (let index = 0; index < favsSeries.length; index++) {
@@ -254,12 +256,14 @@ var tituloCarousel = document.querySelector(`.titulocarousel`)
 
    
     botonFavsEliminar.addEventListener("click", function () {
-        alert(`Quitaste esta serie de favoritos.`)
+        //alert(`Quitaste esta serie de favoritos.`)
         for (let index = 0; index < favsSeries.length; index++) {
             const element = favsSeries[index];
             if (element == queryStringObjId) {
                 favsSeries.splice(index,1)
                 localStorage.setItem("favoritos_series", JSON.stringify(favsSeries))
+                location.reload();
+return false;
             }
         }
     })

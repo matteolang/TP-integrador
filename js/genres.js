@@ -49,7 +49,7 @@ fetch(`https://api.themoviedb.org/3/genre/movie/list?api_key=c5fa76b40f5a5ea03c6
             
             
             contenedorGenerosDos.innerHTML += 
-            `<li class="uk-active">
+            `<li>
             <a href="detalle.html?tipo=genero&id=${results.id}&tipodegenero=serie&nombredelgenero=${results.name}">
             <img src="" alt="">
             <div class="uk-position-center uk-panel"><h1 id="nombres-generos">${results.name}</h1></div>

@@ -344,7 +344,8 @@ p {
     body {
         background-color: #f4f1bb;
           width: 100%;  
-       }
+    
+        }
        
        .enreeltitulo {
            font-family: 'Josefin Sans', sans-serif;
@@ -611,6 +612,12 @@ p {
             grid-template-columns: 1fr 1fr;
             height: 1000px;
             
+        }
+
+        #container-generos-dos {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            height: 1000px;
         }
 
         #nombres-generos {

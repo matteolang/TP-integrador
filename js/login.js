@@ -12,8 +12,14 @@ window.addEventListener("load",function(){
         form.innerHTML = `<div>
         <input name="nombreusuario" type="text" placeholder="Nombre...">
         <button id="botonsubmit" type="submit">Enviar</button> </div>
-        <p id="errorp">Error: Porfavor recargue la pestaña e ingrese su nombre.</p>
+        <p id="errorp">Error: Vuelva a ingresar su nombre cuando se recargue la pestaña.</p>
+        <p id="errorp">Espere unos segundos...</p>
         `
+    
+        setTimeout(function(){ location.reload();
+            return false; }, 8000);
+        
+
         }
     })
 
