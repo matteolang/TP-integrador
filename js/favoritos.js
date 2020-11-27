@@ -76,14 +76,16 @@ window.addEventListener("load",function(){
 console.log(localStorage)
 var tituloPelis = document.getElementById(`titulofavsPelis`)
 var tituloSeries = document.getElementById(`titulofavsSeries`)
-var storagePelis = localStorage.getItem(`favoritos_peliculas`)
-var storageSeries = localStorage.getItem(`favoritos_series`)
+var storagePelis = localStorage.getItem(`favoritos_peliculas`) //ESTO ESTA DEMAS PERO ESTANDO A 1 HORA DE LA ENTREGA, LO QUE FUNCIONA NO SE TOCA :)
+var storageSeries = localStorage.getItem(`favoritos_series`) //ESTO ESTA DEMAS PERO ESTANDO A 1 HORA DE LA ENTREGA, LO QUE FUNCIONA NO SE TOCA
 var tituloFavs = document.querySelector(`.titulofavs`)
 var contenedorPelis = document.getElementById(`div-favoritos-pelis`)
-var contenedorSeries = document.getElementById(`div-favoritos-series`)
-var favsPelis =  JSON.parse(localStorage.getItem("favoritos_peliculas"))
+var contenedorSeries = document.getElementById(`div-favoritos-series`) 
+var favsPelis =  JSON.parse(localStorage.getItem("favoritos_peliculas")) //LO DE ARRIBA ESTA DEMAS PORQUE ACA TRAEMOS LO MISMO PERO PASADO A OBJETO
 
-var favsSeries = JSON.parse(localStorage.getItem("favoritos_series"))
+var favsSeries = JSON.parse(localStorage.getItem("favoritos_series")) //LO MISMO ACA :)
+
+//EN LOS IFs DE ABAJO PODRIAMOS HABER USADO LAS VARIABLES QUE TRAEN LAS COSAS EN FORMATO DE OBJ Y ASI NO TENER QUE USAR `[]`, PERO NOS DIMOS CUENTA TARDE Y IGUAL FUNCIONA BIEN
 
 if (storagePelis == `[]` && storageSeries == `[]`) {
     tituloPelis.style.display = `none`;
@@ -105,7 +107,7 @@ if (storagePelis == `[]`) {
 
 console.log(favsPelis)
 
-//Para peliculas marcadas como favs
+
 for (let index = 0; index < favsPelis.length; index++) {
     const element = favsPelis[index];
     
@@ -160,9 +162,9 @@ for (let index = 0; index < favsSeries.length; index++) {
 
 }
 
-//
+
 
 console.log(favsPelis)
   
-//
+
 });

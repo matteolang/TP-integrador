@@ -5,31 +5,7 @@ var linkimagen = "https://image.tmdb.org/t/p/w500"
 var imagenesContenedor = document.querySelector(`#container-populares`)
 var imagenesCarousel = document.querySelector(`ul.uk-slideshow-items`)
 
-//fetch(`https://api.themoviedb.org/3/trending/all/day?api_key=c5fa76b40f5a5ea03c60140eade37d35`)
-  //  .then(function(response){
-    //return response.json();
-    //})
-    //.then(function(data){
-      //  console.log(data);
 
-        
-
-        //for (let index = 0; index < data.results.length; index++) {
-          //  var resultsuno = data.results[index]
-            
-            
-
-            // imagenesCarousel.innerHTML += 
-             //` <li>
-               // <img id="carousel-imagenes" src="${linkimagen}${resultsuno.poster_path}" alt="" uk-cover>
-            //</li>`
-        //}
-
-
-        //})
-    //.catch(function(error){
-      //  console.log(`El error fue: ${error}`);
-    //})
 
 fetch(`https://api.themoviedb.org/3/movie/popular?api_key=c5fa76b40f5a5ea03c60140eade37d35&language=en-US&page=1`)
     .then(function(response){
@@ -130,7 +106,7 @@ fetch(`https://api.themoviedb.org/3/movie/popular?api_key=c5fa76b40f5a5ea03c6014
         .then(function(data){
             console.log(data);
     
-            //hay un error aca
+            
             for (let index = 0; index < data.results.length; index++) {
                 var resultss = data.results[index]
             
